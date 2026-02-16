@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sofia Marbella | The Unspoken Rules</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Lato"', 'sans-serif'],
+              display: ['"Cinzel"', 'serif'],
+            },
+            colors: {
+              gold: {
+                100: '#FCF5E5', // Warmer Cream
+                200: '#F6E4BC', // Champagne
+                300: '#EDCF8E', // Warm Sand
+                400: '#E4BB65', // Honey
+                500: '#D9A74A', // Warmer Rich Gold (previously D4AF37)
+                600: '#AE863B',
+                700: '#83642C',
+                800: '#57431D',
+                900: '#2C210F',
+              },
+              charcoal: {
+                800: '#1A1A1A',
+                900: '#0F0F0F', // Deep background
+                950: '#050505',
+              }
+            },
+            backgroundImage: {
+              'luxury-gradient': 'linear-gradient(to right bottom, #1a1a1a, #0f0f0f)',
+              'gold-gradient': 'linear-gradient(45deg, #AE863B, #D9A74A, #FCF5E5, #D9A74A, #AE863B)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #050505;
+        color: #e5e5e5;
+      }
+      .text-gradient-gold {
+        background: linear-gradient(to right, #D9A74A, #FCF5E5, #D9A74A);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% auto;
+        animation: shine 5s linear infinite;
+      }
+      @keyframes shine {
+        to {
+          background-position: 200% center;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

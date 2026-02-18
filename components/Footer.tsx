@@ -3,11 +3,11 @@ import { Instagram, Twitter, Mail } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-black text-white pt-24 pb-8 border-t border-white/10">
+    <footer className="bg-charcoal-950 text-white pt-24 pb-8">
       <div className="max-w-7xl mx-auto px-6">
 
         {/* Top Section: Checklist CTA */}
-        <div className="grid md:grid-cols-2 gap-12 pb-20 border-b border-white/10 items-center">
+        <div className="grid md:grid-cols-2 gap-12 pb-20 border-b border-white/5 items-center">
           <div>
             <h3 className="text-3xl font-serif text-white mb-6">The Unspoken Rules Checklist</h3>
             <p className="text-gray-400 mb-6 max-w-md leading-relaxed text-lg">
@@ -30,7 +30,7 @@ const Footer: React.FC = () => {
               <input
                 type="email"
                 placeholder="Your Email Address"
-                className="w-full bg-black border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-gold-500 transition-colors text-sm"
+                className="w-full bg-charcoal-900 border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-gold-500 transition-colors text-sm"
               />
               <button className="w-full bg-gold-600 text-black py-3 font-bold uppercase tracking-widest text-xs hover:bg-gold-500 transition-colors">
                 Get the Free Checklist

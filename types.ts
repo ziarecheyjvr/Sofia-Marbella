@@ -18,9 +18,17 @@ export interface ServicePackage {
 export interface QuizQuestion {
   id: number;
   text: string;
-  correctAnswer: boolean; // Just for internal logic of 'passing'
+  correctAnswer: string;
   options: string[];
 }
+
+export interface QuizResult {
+  title: string;
+  subtitle: string;
+  description: string;
+  scoreRange: string;
+}
+
 
 export interface Dimension {
   title: string;

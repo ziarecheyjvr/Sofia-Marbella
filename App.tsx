@@ -13,6 +13,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ComingSoon from './components/ComingSoon';
 import Booking from './components/Booking';
 import ScrollToTop from './components/ScrollToTop';
+import Quiz from './components/Quiz';
+
 
 const HomePage: React.FC = () => (
   <>
@@ -38,7 +40,9 @@ function App() {
             <Route path="/shop-with-me" element={<ComingSoon title="Shop With Me" subtitle="Curated tools for a refined life" />} />
             <Route path="/events-and-travels" element={<ComingSoon title="Events & Travels" subtitle="with Sofia Marbella" />} />
             <Route path="/booking" element={<Booking />} />
+            <Route path="/quiz" element={<Quiz />} />
           </Routes>
+
         </main>
         <Footer />
       </div>

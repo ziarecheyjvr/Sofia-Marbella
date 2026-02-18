@@ -13,10 +13,9 @@ const Assessment: React.FC = () => {
 
           <div className="relative z-10 space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
             <div className="max-w-2xl mx-auto space-y-4">
-              <h3 className="text-3xl md:text-4xl font-serif text-gold-400">The Private Assessment</h3>
+              <h3 className="text-3xl md:text-4xl font-serif text-gold-400">Your Manners Are Your Silent Business Card.</h3>
               <p className="text-gray-300 text-lg leading-relaxed">
-                Presence is not about knowing the rules. It is about alignment.
-                Take this brief assessment to gauge your current trajectory and readiness for mastery.
+                This brief evaluation reveals the subtle signals that shape perception — often before you speak.
               </p>
             </div>
 

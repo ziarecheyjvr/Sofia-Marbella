@@ -12,9 +12,9 @@ const Assessment: React.FC = () => {
           <div className="absolute bottom-0 left-0 w-24 h-24 bg-gold-500/5 rounded-full blur-3xl"></div>
 
           <div className="relative z-10 space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
-            <div className="max-w-2xl mx-auto space-y-4">
-              <h3 className="text-3xl md:text-4xl font-serif text-gold-400">Your Manners Are Your Silent Business Card.</h3>
-              <p className="text-gray-300 text-lg leading-relaxed">
+            <div className="mx-auto space-y-4 px-4 overflow-x-visible">
+              <h3 className="text-3xl md:text-4xl font-serif text-gold-400 whitespace-nowrap">Your Manners Are Your Silent Business Card.</h3>
+              <p className="text-gray-300 text-lg leading-relaxed whitespace-nowrap">
                 This brief evaluation reveals the subtle signals that shape perception — often before you speak.
               </p>
             </div>

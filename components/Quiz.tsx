@@ -104,7 +104,7 @@ const Quiz: React.FC = () => {
                         </div>
 
                         {/* Question Card */}
-                        <div className="bg-charcoal-900/50 border border-white/5 rounded-lg backdrop-blur-sm relative overflow-hidden grid md:grid-cols-[2fr_3fr]">
+                        <div className="bg-charcoal-900/50 border border-white/5 rounded-lg backdrop-blur-sm relative overflow-hidden grid md:grid-cols-[2fr_3fr] items-center">
                             {/* Image Panel */}
                             {QUIZ_QUESTIONS[currentQuestion].image && (
                                 <div className="relative aspect-square overflow-hidden bg-charcoal-950">
@@ -126,20 +126,20 @@ const Quiz: React.FC = () => {
                             )}
 
                             {/* Content Panel */}
-                            <div className="p-8 md:p-12 relative z-10 space-y-8">
+                            <div className="p-6 md:p-10 relative z-10 space-y-6">
                                 <div className="absolute top-0 right-0 w-64 h-64 bg-gold-500/5 rounded-full blur-[100px] -mr-32 -mt-32" />
 
-                                <div className="relative z-10 space-y-8">
-                                    <h3 className="text-2xl md:text-3xl font-serif text-white leading-tight">
+                                <div className="relative z-10 space-y-6">
+                                    <h3 className="text-xl md:text-2xl font-serif text-white leading-tight">
                                         {QUIZ_QUESTIONS[currentQuestion].text}
                                     </h3>
 
-                                    <div className="grid gap-3">
+                                    <div className="grid gap-2">
                                         {QUIZ_QUESTIONS[currentQuestion].options.map((option, idx) => {
                                             const isSelected = selectedOption === option;
                                             const isCorrect = option === QUIZ_QUESTIONS[currentQuestion].correctAnswer;
 
-                                            let buttonClass = "group flex items-center justify-between p-5 text-left bg-charcoal-900/80 border transition-all duration-300 rounded-sm ";
+                                            let buttonClass = "group flex items-center justify-between p-4 text-left bg-charcoal-900/80 border transition-all duration-300 rounded-sm ";
 
                                             if (!isAnswered) {
                                                 buttonClass += "border-white/10 hover:border-gold-500/50 hover:bg-charcoal-800";
@@ -158,7 +158,7 @@ const Quiz: React.FC = () => {
                                                     disabled={isAnswered}
                                                     className={buttonClass}
                                                 >
-                                                    <span className={`text-base transition-colors ${isSelected ? 'text-white' : 'text-gray-400 group-hover:text-gray-200'}`}>
+                                                    <span className={`text-sm md:text-base transition-colors ${isSelected ? 'text-white' : 'text-gray-400 group-hover:text-gray-200'}`}>
                                                         {option}
                                                     </span>
                                                     {isAnswered && isCorrect && <CheckCircle2 size={20} className="text-green-500 flex-shrink-0 ml-3" />}

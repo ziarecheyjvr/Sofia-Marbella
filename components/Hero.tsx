@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Hero: React.FC = () => {
   return (
-    <section id="home" className="relative min-h-screen flex items-center bg-black overflow-hidden pt-20">
+    <section id="home" className="relative min-h-screen flex items-center bg-black overflow-hidden pt-20" style={{ clipPath: 'inset(0)' }}>
       {/* Background Subtle Gradient */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(217,167,74,0.03),transparent_50%)]"></div>
 
@@ -58,11 +58,11 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Right: GIF grounded at bottom */}
-        <div className="order-1 md:order-2 relative flex items-end justify-center md:justify-end h-[40vh] md:h-full mt-8 md:mt-0">
+        <div className="order-1 md:order-2 relative flex items-end justify-center md:justify-end h-[40vh] md:h-full mt-8 md:mt-0 overflow-hidden">
           <img
             src="/assets/videos/hq.gif"
             alt="Sofia Marbella"
-            className="w-auto h-full max-w-full md:max-w-xl max-h-[100vh] object-contain object-bottom z-20 scale-100 md:scale-155 origin-bottom md:origin-bottom-right md:translate-x-[15%] md:-translate-y-[5%]"
+            className="w-auto h-full max-w-full md:max-w-none max-h-[105%] object-contain object-bottom z-20 scale-100 md:scale-[1.35] origin-bottom md:translate-x-[8%]"
           />
         </div>
       </div>

@@ -14,6 +14,7 @@ export const NAV_ITEMS = [
 export const QUIZ_QUESTIONS: QuizQuestion[] = [
   {
     id: 1,
+    image: "/assets/images/1.jpg",
     text: "You arrive at a business meeting and the other person is late. You:",
     correctAnswer: "Stay calm, review your notes, and greet them professionally when they arrive.",
     options: [
@@ -24,6 +25,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
   },
   {
     id: 2,
+    image: "/assets/images/2.jpg",
     text: "You enter a room full of colleagues or clients. What’s the most professional and respectful way to do it?",
     correctAnswer: "Pause, make eye contact, smile, and greet those present",
     options: [
@@ -34,6 +36,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
   },
   {
     id: 3,
+    image: "/assets/images/3.jpg",
     text: "You’ve just met a new client or colleague. What’s the most respectful way to follow up after your meeting?",
     correctAnswer: "Email the same day to thank them for their time",
     options: [
@@ -44,6 +47,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
   },
   {
     id: 4,
+    image: "/assets/images/4.jpg",
     text: "At a networking event, someone interrupts you while you are speaking. You:",
     correctAnswer: "Pause, let them speak, then calmly continue when appropriate.",
     options: [
@@ -54,6 +58,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
   },
   {
     id: 5,
+    image: "/assets/images/5.jpg",
     text: "On a first date, the person criticizes their ex and overshares personal problems. You:",
     correctAnswer: "Politely change the subject and observe their maturity.",
     options: [
@@ -64,6 +69,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
   },
   {
     id: 6,
+    image: "/assets/images/6.jpg",
     text: "You are invited to someone’s home for dinner. You:",
     correctAnswer: "Arrive on time with a small thoughtful gift and thank the host sincerely.",
     options: [
@@ -74,6 +80,7 @@ export const QUIZ_QUESTIONS: QuizQuestion[] = [
   },
   {
     id: 7,
+    image: "/assets/images/7.jpg",
     text: "You are hosting guests in your home. After greeting them and taking their coats, what should you do next?",
     correctAnswer: "Briefly show them where the bathroom is and let them know they are comfortable to use it anytime.",
     options: [

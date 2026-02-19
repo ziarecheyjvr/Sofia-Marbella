@@ -20,6 +20,7 @@ export interface QuizQuestion {
   text: string;
   correctAnswer: string;
   options: string[];
+  image?: string;
 }
 
 export interface QuizResult {

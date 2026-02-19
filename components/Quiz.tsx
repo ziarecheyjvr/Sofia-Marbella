@@ -77,7 +77,7 @@ const Quiz: React.FC = () => {
 
     return (
         <div className="min-h-screen bg-charcoal-950 pt-48 pb-24 px-6 overflow-hidden">
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-5xl mx-auto">
                 {step === 'quiz' && (
                     <div className="space-y-12 animate-in fade-in slide-in-from-bottom-8 duration-700">
                         {/* Header */}
@@ -104,46 +104,69 @@ const Quiz: React.FC = () => {
                         </div>
 
                         {/* Question Card */}
-                        <div className="bg-charcoal-900/50 border border-white/5 p-8 md:p-12 rounded-lg backdrop-blur-sm relative overflow-hidden">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-gold-500/5 rounded-full blur-[100px] -mr-32 -mt-32"></div>
+                        <div className="bg-charcoal-900/50 border border-white/5 rounded-lg backdrop-blur-sm relative overflow-hidden grid md:grid-cols-[2fr_3fr]">
+                            {/* Image Panel */}
+                            {QUIZ_QUESTIONS[currentQuestion].image && (
+                                <div className="relative h-64 md:h-auto overflow-hidden">
+                                    <img
+                                        key={currentQuestion}
+                                        src={QUIZ_QUESTIONS[currentQuestion].image}
+                                        alt={`Question ${currentQuestion + 1} visual`}
+                                        className="absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-500"
+                                    />
+                                    {/* Gradient overlay — right side fade into card */}
+                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-charcoal-900/80 hidden md:block" />
+                                    {/* Bottom overlay on mobile */}
+                                    <div className="absolute inset-0 bg-gradient-to-t from-charcoal-900 via-charcoal-900/40 to-transparent md:hidden" />
+                                    {/* Question number badge */}
+                                    <div className="absolute top-4 left-4 bg-black/60 backdrop-blur-sm border border-gold-500/30 px-3 py-1 rounded-sm">
+                                        <span className="text-gold-500 text-xs tracking-widest uppercase font-bold">Scenario {currentQuestion + 1}</span>
+                                    </div>
+                                </div>
+                            )}
 
-                            <div className="relative z-10 space-y-10">
-                                <h3 className="text-2xl md:text-3xl font-serif text-white leading-tight">
-                                    {QUIZ_QUESTIONS[currentQuestion].text}
-                                </h3>
+                            {/* Content Panel */}
+                            <div className="p-8 md:p-12 relative z-10 space-y-8">
+                                <div className="absolute top-0 right-0 w-64 h-64 bg-gold-500/5 rounded-full blur-[100px] -mr-32 -mt-32" />
 
-                                <div className="grid gap-4">
-                                    {QUIZ_QUESTIONS[currentQuestion].options.map((option, idx) => {
-                                        const isSelected = selectedOption === option;
-                                        const isCorrect = option === QUIZ_QUESTIONS[currentQuestion].correctAnswer;
+                                <div className="relative z-10 space-y-8">
+                                    <h3 className="text-2xl md:text-3xl font-serif text-white leading-tight">
+                                        {QUIZ_QUESTIONS[currentQuestion].text}
+                                    </h3>
 
-                                        let buttonClass = "group flex items-center justify-between p-6 text-left bg-charcoal-900/80 border transition-all duration-300 rounded-sm ";
+                                    <div className="grid gap-3">
+                                        {QUIZ_QUESTIONS[currentQuestion].options.map((option, idx) => {
+                                            const isSelected = selectedOption === option;
+                                            const isCorrect = option === QUIZ_QUESTIONS[currentQuestion].correctAnswer;
 
-                                        if (!isAnswered) {
-                                            buttonClass += "border-white/10 hover:border-gold-500/50 hover:bg-charcoal-800";
-                                        } else if (isSelected) {
-                                            buttonClass += isCorrect ? "border-green-500/50 bg-green-500/5" : "border-red-500/50 bg-red-500/5";
-                                        } else if (isCorrect) {
-                                            buttonClass += "border-green-500/30 bg-green-500/5 opacity-50";
-                                        } else {
-                                            buttonClass += "border-white/5 opacity-30";
-                                        }
+                                            let buttonClass = "group flex items-center justify-between p-5 text-left bg-charcoal-900/80 border transition-all duration-300 rounded-sm ";
 
-                                        return (
-                                            <button
-                                                key={idx}
-                                                onClick={() => handleOptionClick(option)}
-                                                disabled={isAnswered}
-                                                className={buttonClass}
-                                            >
-                                                <span className={`text-lg transition-colors ${isSelected ? 'text-white' : 'text-gray-400 group-hover:text-gray-200'}`}>
-                                                    {option}
-                                                </span>
-                                                {isAnswered && isCorrect && <CheckCircle2 size={20} className="text-green-500" />}
-                                                {!isAnswered && <ChevronRight size={20} className="text-gold-500 opacity-0 group-hover:opacity-100 transform translate-x-2 group-hover:translate-x-0 transition-all" />}
-                                            </button>
-                                        );
-                                    })}
+                                            if (!isAnswered) {
+                                                buttonClass += "border-white/10 hover:border-gold-500/50 hover:bg-charcoal-800";
+                                            } else if (isSelected) {
+                                                buttonClass += isCorrect ? "border-green-500/50 bg-green-500/5" : "border-red-500/50 bg-red-500/5";
+                                            } else if (isCorrect) {
+                                                buttonClass += "border-green-500/30 bg-green-500/5 opacity-50";
+                                            } else {
+                                                buttonClass += "border-white/5 opacity-30";
+                                            }
+
+                                            return (
+                                                <button
+                                                    key={idx}
+                                                    onClick={() => handleOptionClick(option)}
+                                                    disabled={isAnswered}
+                                                    className={buttonClass}
+                                                >
+                                                    <span className={`text-base transition-colors ${isSelected ? 'text-white' : 'text-gray-400 group-hover:text-gray-200'}`}>
+                                                        {option}
+                                                    </span>
+                                                    {isAnswered && isCorrect && <CheckCircle2 size={20} className="text-green-500 flex-shrink-0 ml-3" />}
+                                                    {!isAnswered && <ChevronRight size={20} className="text-gold-500 flex-shrink-0 opacity-0 group-hover:opacity-100 transform translate-x-2 group-hover:translate-x-0 transition-all ml-3" />}
+                                                </button>
+                                            );
+                                        })}
+                                    </div>
                                 </div>
                             </div>
                         </div>

@@ -5,9 +5,11 @@ import { Link } from 'react-router-dom';
 
 const Services: React.FC = () => {
   return (
-    <section id="programs" className="py-24 bg-charcoal-900 relative">
-      <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-charcoal-900 px-8 py-2 border border-gold-500/30 text-gold-500 font-serif tracking-widest uppercase text-sm">
-        Work With Sofia
+    <section id="programs" className="py-24 pt-40 bg-charcoal-900 relative">
+      <div className="max-w-7xl mx-auto px-6 mb-16 text-center">
+        <span className="text-gold-500 font-sans text-xs tracking-[0.3em] uppercase mb-4 block">Programs</span>
+        <h1 className="text-4xl md:text-5xl font-serif text-white mb-4">Private Etiquette &amp; Presence Programs</h1>
+        <p className="text-gray-400 text-lg">Tailored refinement for adults and youth.</p>
       </div>
 
       <div className="max-w-7xl mx-auto px-6">

@@ -4,7 +4,7 @@ import { ArrowRight } from 'lucide-react';
 
 const Assessment: React.FC = () => {
   return (
-    <section id="assessment" className="py-24 bg-charcoal-900 relative">
+    <section id="assessment" className="py-24 bg-charcoal-900 relative overflow-hidden">
       <div className="max-w-5xl mx-auto px-6">
         <div className="bg-charcoal-800 border border-white/5 p-8 md:p-12 rounded-lg shadow-2xl relative overflow-hidden text-center">
           {/* Decorative Elements */}
@@ -13,8 +13,8 @@ const Assessment: React.FC = () => {
 
           <div className="relative z-10 space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500">
             <div className="mx-auto space-y-4 px-4 overflow-x-visible">
-              <h3 className="text-3xl md:text-4xl font-serif text-gold-400 whitespace-nowrap">Your Manners Are Your Silent Business Card.</h3>
-              <p className="text-gray-300 text-lg leading-relaxed whitespace-nowrap">
+              <h3 className="text-3xl md:text-4xl font-serif text-gold-400">Your Manners Are Your Silent Business Card.</h3>
+              <p className="text-gray-300 text-lg leading-relaxed">
                 This brief evaluation reveals the subtle signals that shape perception — often before you speak.
               </p>
             </div>

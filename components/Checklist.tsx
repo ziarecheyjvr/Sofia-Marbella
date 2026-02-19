@@ -19,11 +19,12 @@ const Checklist: React.FC = () => {
         </h2>
 
         <p className="text-gray-400 text-xl leading-relaxed mb-12 max-w-2xl mx-auto">
-          A simple, modern checklist of the everyday etiquette signals that quietly elevate how you’re received—at work, online, at dinner, and on dates.
+          A simple, modern checklist of the everyday etiquette signals that quietly elevate how you’re received—<br />
+          at work, online, at dinner, and on dates.
         </p>
 
         <div className="bg-charcoal-950 border border-white/10 p-8 md:p-12 rounded-sm mb-12 text-left relative shadow-2xl">
-          <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-charcoal-900 px-6 py-1 text-gold-400 text-xs tracking-widest uppercase border border-white/10 whitespace-nowrap">
+          <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-charcoal-900 px-6 py-1 text-gold-400 text-xs tracking-widest uppercase border border-white/10">
             Inside you’ll find fast, practical standards for
           </div>
 

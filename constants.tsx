@@ -7,8 +7,8 @@ export const NAV_ITEMS = [
   { label: 'About', href: '/#about' },
   { label: 'Method', href: '/#method' },
   { label: 'Assessment', href: '/#assessment' },
-  { label: 'Programs', href: '/#programs' },
-  { label: 'Shop', href: '/#shop' },
+  { label: 'Programs', href: '/programs' },
+  { label: 'Shop', href: '/shop' },
 ];
 
 export const QUIZ_QUESTIONS: QuizQuestion[] = [

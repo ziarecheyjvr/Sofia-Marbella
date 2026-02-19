@@ -8,6 +8,7 @@ import Services from './components/Services';
 import Bio from './components/Bio';
 import Shop from './components/Shop';
 import Footer from './components/Footer';
+import LifestyleEvents from './components/LifestyleEvents';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ComingSoon from './components/ComingSoon';
@@ -23,8 +24,7 @@ const HomePage: React.FC = () => (
     <Checklist />
     <Bio />
     <Method />
-    <Services />
-    <Shop />
+    <LifestyleEvents />
   </>
 );
 
@@ -37,6 +37,8 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/programs" element={<Services />} />
+            <Route path="/shop" element={<Shop />} />
             <Route path="/shop-with-me" element={<ComingSoon title="Shop With Me" subtitle="Curated tools for a refined life" />} />
             <Route path="/events-and-travels" element={<ComingSoon title="Events & Travels" subtitle="with Sofia Marbella" />} />
             <Route path="/booking" element={<Booking />} />

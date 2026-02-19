@@ -76,14 +76,14 @@ const Quiz: React.FC = () => {
     };
 
     return (
-        <div className="min-h-screen bg-charcoal-950 pt-48 pb-24 px-6">
+        <div className="min-h-screen bg-charcoal-950 pt-48 pb-24 px-6 overflow-hidden">
             <div className="max-w-3xl mx-auto">
                 {step === 'quiz' && (
                     <div className="space-y-12 animate-in fade-in slide-in-from-bottom-8 duration-700">
                         {/* Header */}
                         <div className="text-center space-y-6">
                             <h2 className="text-4xl md:text-5xl font-serif text-white">The Presence Audit</h2>
-                            <p className="text-gray-400 text-lg mx-auto font-light leading-relaxed italic whitespace-nowrap">
+                            <p className="text-gray-400 text-lg mx-auto font-light leading-relaxed italic">
                                 A strategic assessment of your composure, communication, and social intelligence.
                             </p>
                             <div className="w-12 h-[1px] bg-gold-500/30 mx-auto mt-6"></div>

@@ -5,16 +5,14 @@ const Bio: React.FC = () => {
     <section id="about" className="py-24 bg-charcoal-950 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 
-        <div className="relative order-2 md:order-1">
-          <div className="aspect-[4/5] relative z-10">
+        <div className="relative order-2 md:order-1 flex items-center justify-center">
+          <div className="relative z-10 w-full">
             <img
-              src="/assets/images/sofia.jpg"
+              src="/assets/images/founder1.png"
               alt="Sofia Marbella"
-              className="w-full h-full object-cover filter brightness-75 contrast-125"
+              className="w-full h-auto object-contain"
             />
           </div>
-          {/* Decorative Border Frame */}
-          <div className="absolute top-4 left-4 w-full h-full border border-gold-500/20 z-0"></div>
         </div>
 
         <div className="order-1 md:order-2 space-y-8">

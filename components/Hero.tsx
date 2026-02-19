@@ -7,7 +7,7 @@ const Hero: React.FC = () => {
       {/* Background Subtle Gradient */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(217,167,74,0.03),transparent_50%)]"></div>
 
-      <div className="max-w-7xl mx-auto px-6 w-full grid md:grid-cols-2 gap-12 items-stretch relative z-10 min-h-[calc(100vh-5rem)]">
+      <div className="max-w-7xl mx-auto px-6 w-full grid md:grid-cols-2 gap-12 lg:gap-24 items-stretch relative z-10 min-h-[calc(100vh-5rem)]">
 
         {/* Left: Text Content */}
         <div className="order-2 md:order-1 space-y-8 z-10 relative flex flex-col justify-center py-12 text-center md:text-left">
@@ -58,11 +58,11 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Right: GIF grounded at bottom */}
-        <div className="order-1 md:order-2 relative flex items-end justify-center h-[40vh] md:h-full mt-8 md:mt-0">
+        <div className="order-1 md:order-2 relative flex items-end justify-center md:justify-end h-[40vh] md:h-full mt-8 md:mt-0">
           <img
             src="/assets/videos/hq.gif"
             alt="Sofia Marbella"
-            className="w-auto h-full max-w-full md:max-w-none object-contain object-bottom z-20 scale-110 md:scale-90 origin-bottom"
+            className="w-auto h-full max-w-full md:max-w-xl max-h-[95vh] object-contain object-bottom z-20 scale-100 md:scale-120 origin-bottom md:origin-bottom-right md:translate-x-[15%] md:translate-y-[12%]"
           />
         </div>
       </div>

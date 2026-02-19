@@ -15,7 +15,7 @@ const Bio: React.FC = () => {
           </div>
         </div>
 
-        <div className="order-1 md:order-2 space-y-8">
+        <div className="order-1 md:order-2 space-y-8 pb-24">
           <h2 className="text-sm font-sans tracking-[0.3em] text-gold-500 uppercase">Founder & Educator</h2>
           <h3 className="text-4xl md:text-5xl font-serif text-white">Why Listen to Sofia Marbella</h3>
 

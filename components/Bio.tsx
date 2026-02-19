@@ -2,15 +2,15 @@ import React from 'react';
 
 const Bio: React.FC = () => {
   return (
-    <section id="about" className="py-24 bg-charcoal-950 overflow-hidden">
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+    <section id="about" className="pt-24 bg-charcoal-950 overflow-hidden">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-end">
 
-        <div className="relative order-2 md:order-1 flex items-center justify-center">
+        <div className="relative order-2 md:order-1 flex items-end justify-center">
           <div className="relative z-10 w-full">
             <img
               src="/assets/images/founder1.png"
               alt="Sofia Marbella"
-              className="w-full h-auto object-contain"
+              className="w-full h-auto object-contain block"
             />
           </div>
         </div>

@@ -107,12 +107,12 @@ const Quiz: React.FC = () => {
                         <div className="bg-charcoal-900/50 border border-white/5 rounded-lg backdrop-blur-sm relative overflow-hidden grid md:grid-cols-[2fr_3fr]">
                             {/* Image Panel */}
                             {QUIZ_QUESTIONS[currentQuestion].image && (
-                                <div className="relative h-64 md:h-auto overflow-hidden">
+                                <div className="relative aspect-square overflow-hidden bg-charcoal-950">
                                     <img
                                         key={currentQuestion}
                                         src={QUIZ_QUESTIONS[currentQuestion].image}
                                         alt={`Question ${currentQuestion + 1} visual`}
-                                        className="absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-500"
+                                        className="absolute inset-0 w-full h-full object-contain object-center transition-opacity duration-500"
                                     />
                                     {/* Gradient overlay — right side fade into card */}
                                     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-transparent to-charcoal-900/80 hidden md:block" />

@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
           <img
             src="/assets/videos/hq.gif"
             alt="Sofia Marbella"
-            className="w-auto h-full max-w-full md:max-w-none max-h-[105%] object-contain object-bottom z-20 scale-100 md:scale-[1.35] origin-bottom md:translate-x-[8%]"
+            className="w-auto h-full max-w-full md:max-w-none max-h-[90%] object-contain object-bottom z-20 scale-100 md:scale-110 origin-bottom md:translate-x-[5%]"
           />
         </div>
       </div>

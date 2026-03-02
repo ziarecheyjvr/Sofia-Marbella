@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Twitter, Mail } from 'lucide-react';
+import { Instagram, Facebook, Linkedin, Mail } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -62,7 +62,8 @@ const Footer: React.FC = () => {
             <h5 className="text-white text-sm uppercase tracking-widest font-bold">Connect</h5>
             <div className="flex space-x-4 text-gray-500">
               <a href="https://www.instagram.com/sofia.marbella" target="_blank" rel="noopener noreferrer" className="hover:text-gold-400 transition-colors"><Instagram size={20} /></a>
-              <a href="#" className="hover:text-gold-400 transition-colors"><Twitter size={20} /></a>
+              <a href="https://www.facebook.com/profile.php?id=100009653418224" target="_blank" rel="noopener noreferrer" className="hover:text-gold-400 transition-colors"><Facebook size={20} /></a>
+              <a href="https://www.linkedin.com/in/sofiamarbella/" target="_blank" rel="noopener noreferrer" className="hover:text-gold-400 transition-colors"><Linkedin size={20} /></a>
               <a href="https://www.tiktok.com/@sofia.marbella" target="_blank" rel="noopener noreferrer" className="hover:text-gold-400 transition-colors">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

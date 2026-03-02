@@ -7,10 +7,10 @@ const Hero: React.FC = () => {
       {/* Background Subtle Gradient */}
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_50%,rgba(217,167,74,0.03),transparent_50%)]"></div>
 
-      <div className="max-w-7xl mx-auto px-6 w-full grid md:grid-cols-2 gap-12 lg:gap-24 items-stretch relative z-10 min-h-[calc(100vh-5rem)]">
+      <div className="max-w-7xl mx-auto px-6 w-full grid md:grid-cols-2 items-stretch relative z-10 min-h-[calc(100vh-5rem)]">
 
         {/* Left: Text Content */}
-        <div className="order-2 md:order-1 space-y-8 z-10 relative flex flex-col justify-center py-12 text-center md:text-left">
+        <div className="order-2 md:order-1 space-y-8 z-10 relative flex flex-col justify-center py-12 md:pr-12 text-center md:text-left">
           <h1 className="relative inline-block mx-auto md:mx-0 text-4xl md:text-6xl lg:text-7xl font-serif text-white leading-tight">
             {/* Wax Seal Image */}
             <img
@@ -58,11 +58,13 @@ const Hero: React.FC = () => {
         </div>
 
         {/* Right: GIF grounded at bottom */}
-        <div className="order-1 md:order-2 relative flex items-end justify-center md:justify-end h-[40vh] md:h-full mt-8 md:mt-0 overflow-hidden">
+        <div className="order-1 md:order-2 relative flex items-end justify-center md:justify-end h-[45vh] md:h-full mt-8 md:mt-0 overflow-hidden bg-black">
+          {/* Subtle blend gradient on the left edge for large screens */}
+          <div className="hidden md:block absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-black to-transparent z-30"></div>
           <img
             src="/assets/videos/hq.gif"
             alt="Sofia Marbella"
-            className="w-auto h-full max-w-full md:max-w-none max-h-[90%] object-contain object-bottom z-20 scale-100 md:scale-110 origin-bottom md:translate-x-[5%]"
+            className="w-auto h-full max-w-full md:max-w-none max-h-[85vh] md:max-h-full object-contain object-bottom z-20 scale-100 md:scale-105 lg:scale-110 origin-bottom md:translate-x-[5%] transition-transform duration-700"
           />
         </div>
       </div>

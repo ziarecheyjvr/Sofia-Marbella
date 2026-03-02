@@ -115,14 +115,14 @@ export const QUIZ_RESULTS = {
 
 export const METHOD_DIMENSIONS: Dimension[] = [
   {
-    title: "EMOTIONAL",
-    description: "Composure, boundaries, self-command",
-    icon: <Heart className="w-6 h-6 text-gold-500" />
-  },
-  {
     title: "PHYSICAL",
     description: "Posture, grooming, body language, presentation",
     icon: <User className="w-6 h-6 text-gold-500" />
+  },
+  {
+    title: "EMOTIONAL",
+    description: "Composure, boundaries, self-command",
+    icon: <Heart className="w-6 h-6 text-gold-500" />
   },
   {
     title: "SPIRITUAL",
@@ -130,7 +130,7 @@ export const METHOD_DIMENSIONS: Dimension[] = [
     icon: <Sun className="w-6 h-6 text-gold-500" />
   },
   {
-    title: "PROFESSIONAL / FINANCIAL",
+    title: "FINANCIAL HEALTH",
     description: "Business etiquette, executive presence, opportunity-ready conduct",
     icon: <Briefcase className="w-6 h-6 text-gold-500" />
   }

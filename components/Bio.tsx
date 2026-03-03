@@ -37,7 +37,7 @@ const Bio: React.FC = () => {
                 <span className="text-base">Background in theatre, ice skating, dance, and modelling, combined with motherhood, reflects a well-rounded understanding of poise, presence, confidence, and femininity.</span>
               </li>
             </ul>
-            <p className="italic text-gold-200/80 text-sm max-w-md leading-tight">
+            <p className="italic text-gold-200/80 text-lg max-w-2xl leading-relaxed">
               "She doesn’t teach you how to pretend. She teaches you how to refine what’s already there—so your presence becomes consistent everywhere."
             </p>
           </div>

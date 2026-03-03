@@ -15,6 +15,8 @@ import ComingSoon from './components/ComingSoon';
 import Booking from './components/Booking';
 import ScrollToTop from './components/ScrollToTop';
 import Quiz from './components/Quiz';
+import PrivacyPolicy from './components/PrivacyPolicy';
+import TermsConditions from './components/TermsConditions';
 
 
 const HomePage: React.FC = () => (
@@ -43,6 +45,8 @@ function App() {
             <Route path="/events-and-travels" element={<ComingSoon title="Events & Travels" subtitle="with Sofia Marbella" />} />
             <Route path="/booking" element={<Booking />} />
             <Route path="/quiz" element={<Quiz />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<TermsConditions />} />
           </Routes>
 
         </main>

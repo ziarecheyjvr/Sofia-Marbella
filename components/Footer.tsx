@@ -105,8 +105,12 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Bottom */}
-        <div className="text-center text-sm text-gray-700 uppercase tracking-widest pt-8">
-          &copy; {new Date().getFullYear()} Sofia Marbella. All Rights Reserved.
+        <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-700 uppercase tracking-widest pt-8 border-t border-white/5">
+          <p>&copy; {new Date().getFullYear()} Sofia Marbella. All Rights Reserved.</p>
+          <div className="flex space-x-6 mt-4 md:mt-0">
+            <a href="/privacy" className="hover:text-gold-400 transition-colors">Privacy Policy</a>
+            <a href="/terms" className="hover:text-gold-400 transition-colors">Terms & Conditions</a>
+          </div>
         </div>
       </div>
     </footer>

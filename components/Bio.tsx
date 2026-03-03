@@ -29,15 +29,15 @@ const Bio: React.FC = () => {
                 <span className="text-base uppercase tracking-wider">Followers across TikTok and Instagram</span>
               </li>
               <li className="flex flex-col">
-                <span className="text-white font-bold text-xl">Background</span>
-                <span className="text-base">Trained as a professional ice skater; degrees in Sport Management and Acting</span>
+                <span className="text-white font-bold text-xl">Experience</span>
+                <span className="text-base">Over 20 years of experience coaching individuals of all ages in etiquette and manners, Sofia is a published author of The Gentle Reminder Notebook and Diary - guide designed to promote mindfulness, confidence, and elegant social conduct.</span>
               </li>
               <li className="flex flex-col">
-                <span className="text-white font-bold text-xl">Creator</span>
-                <span className="text-base">“The Gentle Reminder” methodology and private educational curriculum</span>
+                <span className="text-white font-bold text-xl">Background</span>
+                <span className="text-base">Background in theatre, ice skating, dance, and modelling, combined with motherhood, reflects a well-rounded understanding of poise, presence, confidence, and femininity.</span>
               </li>
             </ul>
-            <p className="italic text-gold-200/80 text-xl">
+            <p className="italic text-gold-200/80 text-sm max-w-md leading-tight">
               "She doesn’t teach you how to pretend. She teaches you how to refine what’s already there—so your presence becomes consistent everywhere."
             </p>
           </div>

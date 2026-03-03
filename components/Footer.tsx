@@ -6,6 +6,21 @@ const Footer: React.FC = () => {
     <footer className="bg-charcoal-950 text-white pt-24 pb-8">
       <div className="max-w-7xl mx-auto px-6">
 
+        {/* Quote Image Section */}
+        <div className="mb-24 px-4 sm:px-0">
+          <div className="relative group max-w-4xl mx-auto overflow-hidden">
+            <div className="absolute inset-0 bg-gold-500/5 blur-3xl rounded-full opacity-40 group-hover:opacity-60 transition-opacity duration-1000"></div>
+            <div className="relative z-10 p-1 border border-gold-500/30 group-hover:border-gold-500/60 transition-colors duration-1000 rounded-sm">
+              <img
+                src="/assets/images/sofia-marbella-quote.webp"
+                alt="Sofia Marbella Quote"
+                className="w-full h-auto object-contain mx-auto transform transition-transform duration-1000 hover:scale-[1.01]"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+
         {/* Top Section: Checklist CTA */}
         <div className="grid md:grid-cols-2 gap-12 pb-20 border-b border-white/5 items-center">
           <div>

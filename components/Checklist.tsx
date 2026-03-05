@@ -14,26 +14,31 @@ const Checklist: React.FC = () => {
         <span className="text-gold-500 font-sans text-xs tracking-[0.3em] uppercase mb-4 block">Start Here (Free)</span>
 
         <h2 className="text-3xl md:text-5xl font-serif text-white mb-6">
-          The Unspoken Rules <br />
-          <span className="text-gold-500 italic">Checklist</span>
+          First Steps in Etiquette &amp; Manners <br />
+          <span className="text-gold-500 italic">Guide</span>
         </h2>
 
-        <p className="text-gray-400 text-xl leading-relaxed mb-12 max-w-2xl mx-auto">
-          A simple, modern checklist of the everyday etiquette signals that quietly elevate how you’re received—<br />
-          at work, online, at dinner, and on dates.
-        </p>
+        <div className="text-gray-400 text-xl leading-relaxed mb-12 max-w-2xl mx-auto space-y-4">
+          <p>
+            Grace, presence, and confidence are built through the smallest details.
+          </p>
+          <p>
+            This introductory guide reveals the subtle etiquette standards that shape how you are perceived in everyday life — from social settings to dining, introductions, and public interactions.
+          </p>
+        </div>
 
         <div className="bg-charcoal-950 border border-white/10 p-8 md:p-12 rounded-sm mb-12 text-left relative shadow-2xl">
-          <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-charcoal-900 px-6 py-1 text-gold-400 text-xs tracking-widest uppercase border border-white/10">
-            Inside you’ll find fast, practical standards for
+          <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-charcoal-900 px-6 py-1 text-gold-400 text-xs tracking-widest uppercase border border-white/10 whitespace-nowrap">
+            Inside you'll learn
           </div>
 
           <div className="grid md:grid-cols-2 gap-y-6 gap-x-12 pt-4">
             {[
-              "Dining protocol and public presence",
-              "Digital etiquette (messages, email, calls)",
-              "First impressions and introductions",
-              "Social boundaries and composure"
+              "Elegant posture and graceful presence",
+              "Dining etiquette and table behavior",
+              "Social awareness in public spaces",
+              "Polished first impressions",
+              "The quiet habits of refined individual"
             ].map((item, idx) => (
               <div key={idx} className="flex items-start gap-4 group">
                 <div className="mt-1 w-5 h-5 rounded-full border border-gold-500/30 flex items-center justify-center group-hover:border-gold-500 transition-colors flex-shrink-0">
@@ -46,9 +51,9 @@ const Checklist: React.FC = () => {
         </div>
 
         <div className="space-y-6">
-          <p className="text-white font-serif text-2xl italic">Get it free and start refining today.</p>
+          <p className="text-white font-serif text-2xl italic">Begin refining your presence today.</p>
           <button className="bg-gold-600 text-charcoal-950 px-8 py-4 font-sans uppercase tracking-widest text-xs font-bold hover:bg-gold-500 transition-all shadow-[0_0_20px_rgba(217,167,74,0.2)]">
-            Get the Free Checklist
+            Download the Free Guide
           </button>
         </div>
 

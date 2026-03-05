@@ -24,23 +24,16 @@ const Footer: React.FC = () => {
         {/* Top Section: Checklist CTA */}
         <div className="grid md:grid-cols-2 gap-12 pb-20 border-b border-white/5 items-center">
           <div>
-            <h3 className="text-3xl font-serif text-white mb-6">The Unspoken Rules Checklist</h3>
-            <p className="text-gray-400 mb-6 max-w-md leading-relaxed text-lg">
-              A simple, modern checklist of the everyday etiquette signals that quietly elevate how you’re received—at work, online, at dinner, and on dates.
-            </p>
-            <div className="text-base text-gray-500 mb-8 space-y-2">
-              <p className="font-bold text-gray-400">Inside you’ll find fast, practical standards for:</p>
-              <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                <li>• Dining protocol and public presence</li>
-                <li>• Digital etiquette (messages, email, calls)</li>
-                <li>• First impressions and introductions</li>
-                <li>• Social boundaries and composure</li>
-              </ul>
+            <h3 className="text-3xl font-serif text-white mb-6">First Steps in Etiquette &amp; Manners Guide</h3>
+            <div className="text-gray-400 mb-6 leading-relaxed text-lg space-y-4">
+              <p className="max-w-2xl">Grace, presence, and confidence are built through the smallest details.</p>
+              <p className="max-w-sm">This introductory guide reveals the subtle etiquette standards that shape how you are perceived in everyday life.</p>
             </div>
+
           </div>
           <div className="bg-charcoal-900 p-8 border border-white/10 relative">
             <div className="absolute top-0 right-0 -mt-3 -mr-3 bg-gold-600 text-xs font-bold px-3 py-1 text-black">FREE</div>
-            <h4 className="text-white text-lg font-serif mb-4">Get it free and start refining today.</h4>
+            <h4 className="text-white text-lg font-serif mb-4">Begin refining your presence today.</h4>
             <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
               <input
                 type="email"
@@ -48,7 +41,7 @@ const Footer: React.FC = () => {
                 className="w-full bg-charcoal-900 border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-gold-500 transition-colors text-sm"
               />
               <button className="w-full bg-gold-600 text-black py-3 font-bold uppercase tracking-widest text-xs hover:bg-gold-500 transition-colors">
-                Get the Free Checklist
+                Download the Free Guide
               </button>
             </form>
           </div>

@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
               href="#checklist"
               className="w-full sm:w-auto bg-gold-600 text-charcoal-950 px-6 py-4 font-sans uppercase tracking-widest text-xs font-bold hover:bg-gold-500 transition-all shadow-[0_0_20px_rgba(217,167,74,0.2)] inline-block text-center"
             >
-              Get The Free Checklist
+              Get the Free Guide
             </a>
             <Link to="/booking" className="w-full sm:w-auto border border-white/20 text-white px-6 py-4 font-sans uppercase tracking-widest text-xs font-bold hover:border-gold-500 hover:text-gold-500 transition-all backdrop-blur-sm text-center">
               Book A Private Session

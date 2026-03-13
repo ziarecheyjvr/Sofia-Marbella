@@ -9,6 +9,7 @@ export const NAV_ITEMS = [
   { label: 'Assessment', href: '/#assessment' },
   { label: 'Programs', href: '/programs' },
   { label: 'Shop', href: '/shop' },
+  { label: 'Discounts', href: '/discounts' },
 ];
 
 export const QUIZ_QUESTIONS: QuizQuestion[] = [

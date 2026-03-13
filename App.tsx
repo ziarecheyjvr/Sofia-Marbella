@@ -7,6 +7,7 @@ import Method from './components/Method';
 import Services from './components/Services';
 import Bio from './components/Bio';
 import Shop from './components/Shop';
+import Discounts from './components/Discounts';
 import Footer from './components/Footer';
 import LifestyleEvents from './components/LifestyleEvents';
 
@@ -41,7 +42,7 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/programs" element={<Services />} />
             <Route path="/shop" element={<Shop />} />
-            <Route path="/shop-with-me" element={<ComingSoon title="Shop With Me" subtitle="Curated tools for a refined life" />} />
+            <Route path="/discounts" element={<Discounts />} />
             <Route path="/events-and-travels" element={<ComingSoon title="Events & Travels" subtitle="with Sofia Marbella" />} />
             <Route path="/booking" element={<Booking />} />
             <Route path="/quiz" element={<Quiz />} />

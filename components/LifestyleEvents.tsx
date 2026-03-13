@@ -7,7 +7,7 @@ const LifestyleEvents: React.FC = () => {
         <section className="bg-charcoal-900 border-t border-white/5">
             <div className="grid md:grid-cols-2">
 
-                {/* Shop With Me */}
+                {/* Exclusive Discounts */}
                 <div className="relative group bg-charcoal-950 border-t border-white/10 md:border-r overflow-hidden">
                     {/* Decorative Background */}
                     <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-gold-500/[0.03] rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none"></div>
@@ -19,15 +19,15 @@ const LifestyleEvents: React.FC = () => {
                                 <span className="text-xs font-sans tracking-[0.3em] uppercase">Lifestyle</span>
                             </div>
 
-                            <h3 className="text-4xl md:text-5xl font-serif text-white mb-6">Shop With Me</h3>
-                            <p className="text-gold-400 italic mb-8 text-2xl font-serif">Curated tools for a refined life.</p>
+                            <h3 className="text-4xl md:text-5xl font-serif text-white mb-6">Exclusive Discounts</h3>
+                            <p className="text-gold-400 italic mb-8 text-2xl font-serif">Curated affiliates and promo codes.</p>
 
                             <p className="text-gray-400 text-lg leading-relaxed mb-10 max-w-md">
-                                From wardrobe essentials to hosting pieces, books, travel accessories and elegant lifestyle products. Sofia shares only what meets her standards.
+                                A curated affiliates section featuring Sofia's recommended products across fashion, lifestyle, and home with exclusive discount codes.
                             </p>
 
                             <ul className="space-y-4 mb-10 border-t border-white/5 pt-8 w-full">
-                                {['Exclusive discounts', 'Selected with intention', 'Updated seasonally'].map((item, i) => (
+                                {['Exclusive promo codes', 'Selected with intention', 'Affiliated brands'].map((item, i) => (
                                     <li key={i} className="flex items-center text-gray-400 text-sm font-sans tracking-wider uppercase group-hover:text-gold-200 transition-colors">
                                         <span className="w-1 h-1 bg-gold-500 rounded-full mr-4"></span>
                                         {item}
@@ -35,14 +35,13 @@ const LifestyleEvents: React.FC = () => {
                                 ))}
                             </ul>
 
-                            <p className="text-gray-600 text-sm mb-2 italic">(Products to be added)</p>
                         </div>
 
                         <Link
-                            to="/shop-with-me"
+                            to="/discounts"
                             className="mt-8 flex items-center gap-3 text-white border-b border-gold-500 pb-1 hover:text-gold-400 hover:border-white transition-all uppercase tracking-widest text-xs"
                         >
-                            View Collection <ArrowUpRight size={16} />
+                            View All Discounts <ArrowUpRight size={16} />
                         </Link>
                     </div>
                 </div>

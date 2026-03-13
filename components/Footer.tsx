@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
         </div>
 
         {/* Top Section: Checklist CTA */}
-        <div className="grid md:grid-cols-2 gap-12 pb-20 border-b border-white/5 items-center">
+        <div id="guide-form" className="grid md:grid-cols-2 gap-12 pb-20 border-b border-white/5 items-center">
           <div>
             <h3 className="text-3xl font-serif text-white mb-6">First Steps in Etiquette &amp; Manners Guide</h3>
             <div className="text-gray-400 mb-6 leading-relaxed text-lg space-y-4">

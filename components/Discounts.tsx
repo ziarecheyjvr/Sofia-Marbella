@@ -2,9 +2,7 @@ import React from 'react';
 import { ExternalLink, Tag } from 'lucide-react';
 
 const affiliates = [
-  { name: 'SHEIN', url: '#', type: 'Fashion' },
   { name: 'MOTF', url: '#', type: 'Premium Fashion' },
-  { name: 'TEMU', url: '#', type: 'Lifestyle' },
   { 
     name: 'Ogee', 
     url: 'https://ogee.com/en-eu', 
@@ -14,9 +12,17 @@ const affiliates = [
   },
   { 
     name: 'Herbal Face Food', 
-    url: 'https://www.herbalfacefood.com', 
-    code: 'sofiamarbella',
-    type: 'Advanced Botanicals'
+    type: 'Advanced Botanicals',
+    note: 'Refer your friends and earn commissions on purchases made by them. Invite others, grow your network, and earn commissions.',
+    codes: [
+      { discount: '30% off', value: 'Sofiamarbella' },
+      { discount: '50% off', value: 'SOFIAI50' }
+    ],
+    links: [
+      { label: 'Referral Link 35%', url: 'https://herbalfacefood.com/?ref=htnhszdy' },
+      { label: 'Network Signup', url: 'https://herbalfacefood.goaffpro.com/create-account?ref=hthszdy' },
+      { label: 'Affiliate Home Page', url: 'https://herbalfacefood.goaffpro.com/?ref=htnhszdy' }
+    ]
   },
   { 
     name: 'Kangen Water', 
@@ -58,6 +64,17 @@ const Discounts: React.FC = () => {
                   </div>
                 )}
 
+                {brand.codes && (
+                  <div className="mb-4 flex flex-col items-start gap-2">
+                    {brand.codes.map((c, i) => (
+                      <div key={i} className="inline-flex items-center gap-2 bg-white/5 px-4 py-2 border border-white/10">
+                        <span className="text-[10px] uppercase tracking-widest text-gray-400">{c.discount}:</span>
+                        <span className="text-gold-400 font-mono tracking-wider">{c.value}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
                 {brand.note && (
                   <p className="text-gray-400 text-sm italic mb-6">{brand.note}</p>
                 )}
@@ -65,7 +82,21 @@ const Discounts: React.FC = () => {
                 <div className="pt-4 border-t border-white/5">
                   {brand.isDM ? (
                     <p className="text-gold-500 text-xs uppercase tracking-[0.2em]">Contact for access</p>
-                  ) : (
+                  ) : brand.links ? (
+                    <div className="flex flex-col gap-3">
+                      {brand.links.map((link, i) => (
+                        <a 
+                          key={i}
+                          href={link.url} 
+                          target="_blank" 
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 text-white text-xs uppercase tracking-widest hover:text-gold-400 transition-colors"
+                        >
+                          {link.label} <ExternalLink size={14} />
+                        </a>
+                      ))}
+                    </div>
+                  ) : brand.url ? (
                     <a 
                       href={brand.url} 
                       target="_blank" 
@@ -74,7 +105,7 @@ const Discounts: React.FC = () => {
                     >
                       Visit Brand <ExternalLink size={14} />
                     </a>
-                  )}
+                  ) : null}
                 </div>
               </div>
             </div>

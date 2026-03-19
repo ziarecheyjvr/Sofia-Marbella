@@ -15,8 +15,7 @@ const affiliates = [
     type: 'Advanced Botanicals',
     note: 'Refer your friends and earn commissions on purchases made by them. Invite others, grow your network, and earn commissions.',
     codes: [
-      { discount: '30% off', value: 'Sofiamarbella' },
-      { discount: '50% off', value: 'SOFIAI50' }
+      { discount: '30% off', value: 'Sofiamarbella' }
     ],
     links: [
       { label: 'Referral Link 35%', url: 'https://herbalfacefood.com/?ref=htnhszdy' },

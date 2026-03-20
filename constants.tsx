@@ -151,7 +151,7 @@ export const SERVICES: ServicePackage[] = [
       "Boundaries, composure, and confident communication"
     ],
     cta: "Book Now",
-    href: "https://sofia.style/products/1-1-lesson-on-etiquette-manners-60min?pr_prod_strat=e5_desc&pr_rec_id=dbc92f92c&pr_rec_pid=6999429152861&pr_ref_pid=6670483128413&pr_seq=uniform"
+    href: "https://sofia.style/products/1-1-lesson-on-etiquette-manners-60min?pr_prod_strat=e5_desc&pr_rec_id=dbc92f92c&pr_rec_pid=6999429152861&pr_ref_pid=6670483128413&pr_seq=uniform&utm_source=klb-website&utm_medium=referral&utm_campaign=programs"
   },
   {
     title: "Private Short Course",
@@ -164,7 +164,7 @@ export const SERVICES: ServicePackage[] = [
       "SOCIAL: hosting, conversation, events, dating"
     ],
     cta: "Book Now",
-    href: "https://sofia.style/products/one-to-one-etiquette-manners-short-course-for-adults?pr_prod_strat=e5_desc&pr_rec_id=424c4f9c2&pr_rec_pid=15603151438173&pr_ref_pid=6999429152861&pr_seq=uniform"
+    href: "https://sofia.style/products/one-to-one-etiquette-manners-short-course-for-adults?pr_prod_strat=e5_desc&pr_rec_id=424c4f9c2&pr_rec_pid=15603151438173&pr_ref_pid=6999429152861&pr_seq=uniform&utm_source=klb-website&utm_medium=referral&utm_campaign=programs"
   },
   {
     title: "Youth Excellence",
@@ -179,7 +179,7 @@ export const SERVICES: ServicePackage[] = [
       "Cultural awareness and public behavior"
     ],
     cta: "Book Now",
-    href: "https://sofia.style/products/etiquette-manners-private-lessons-for-kids-young-adults?pr_prod_strat=e5_desc&pr_rec_id=7690fc634&pr_rec_pid=9510315557213&pr_ref_pid=15603151438173&pr_seq=uniform"
+    href: "https://sofia.style/products/etiquette-manners-private-lessons-for-kids-young-adults?pr_prod_strat=e5_desc&pr_rec_id=7690fc634&pr_rec_pid=9510315557213&pr_ref_pid=15603151438173&pr_seq=uniform&utm_source=klb-website&utm_medium=referral&utm_campaign=programs"
   },
   {
     title: "Youth Short Course",
@@ -188,6 +188,6 @@ export const SERVICES: ServicePackage[] = [
     description: "A structured foundation in first impressions, social graces, and essential table manners—designed to build confidence, not entitlement.",
     features: [],
     cta: "Book Now",
-    href: "https://sofia.style/products/etiquette-manners-of-3-lessons-60min-each-for-kids-young-adults?pr_prod_strat=e5_desc&pr_rec_id=80da18c3c&pr_rec_pid=9769149071709&pr_ref_pid=9510315557213&pr_seq=uniform"
+    href: "https://sofia.style/products/etiquette-manners-of-3-lessons-60min-each-for-kids-young-adults?pr_prod_strat=e5_desc&pr_rec_id=80da18c3c&pr_rec_pid=9769149071709&pr_ref_pid=9510315557213&pr_seq=uniform&utm_source=klb-website&utm_medium=referral&utm_campaign=programs"
   }
 ];

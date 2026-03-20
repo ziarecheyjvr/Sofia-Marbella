@@ -32,7 +32,7 @@ const Shop: React.FC = () => {
                   </p>
                   <div className="pt-4">
                     <a
-                      href="https://sofia.style/products/gentle-reminder"
+                      href="https://sofia.style/products/gentle-reminder?utm_source=klb-website&utm_medium=referral&utm_campaign=journal"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-block bg-gold-600 text-white px-8 py-4 font-sans uppercase tracking-[0.2em] text-[10px] hover:bg-gold-500 transition-colors w-full md:w-auto text-center"

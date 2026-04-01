@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Check } from 'lucide-react';
+import FreeGuideModal from './FreeGuideModal';
 
 const Checklist: React.FC = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section id="checklist" className="py-24 bg-charcoal-900 relative overflow-hidden border-t border-white/5">
       {/* Decorative Background Aura */}
@@ -52,14 +55,23 @@ const Checklist: React.FC = () => {
 
         <div className="space-y-6">
           <p className="text-white font-serif text-2xl italic">Begin refining your presence today.</p>
-          <button className="bg-gold-600 text-charcoal-950 px-8 py-4 font-sans uppercase tracking-widest text-xs font-bold hover:bg-gold-500 transition-all shadow-[0_0_20px_rgba(217,167,74,0.2)]">
+          <button 
+            onClick={() => setIsModalOpen(true)}
+            className="bg-gold-600 text-charcoal-950 px-8 py-4 font-sans uppercase tracking-widest text-xs font-bold hover:bg-gold-500 transition-all shadow-[0_0_20px_rgba(217,167,74,0.2)]"
+          >
             Download the Free Guide
           </button>
         </div>
 
       </div>
+
+      <FreeGuideModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+      />
     </section>
   );
 };
+
 
 export default Checklist;

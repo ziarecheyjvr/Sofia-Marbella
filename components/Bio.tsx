@@ -9,7 +9,7 @@ const Bio: React.FC = () => {
           <div className="relative z-10 w-full">
             <img
               src="/assets/images/founder1.png"
-              alt="Sofia.Marbella"
+              alt="Sofia Marbella"
               className="w-full h-auto object-contain block"
             />
           </div>
@@ -17,11 +17,11 @@ const Bio: React.FC = () => {
 
         <div className="order-1 md:order-2 space-y-8 pb-24">
           <h2 className="text-sm font-sans tracking-[0.3em] text-gold-500 uppercase">Founder & Educator</h2>
-          <h3 className="text-4xl md:text-5xl font-serif text-white">Why Listen to <span className="whitespace-nowrap">Sofia.Marbella</span></h3>
+          <h3 className="text-4xl md:text-5xl font-serif text-white">Why Listen to Sofia Marbella</h3>
 
           <div className="space-y-6 text-gray-400 leading-relaxed font-light text-lg">
             <p>
-              <span className="whitespace-nowrap">Sofia.Marbella</span> (legal name Sofia Ilieva) rebuilt etiquette for the modern world—turning old-world protocol into a practical refinement system for a digital age.
+              Sofia Marbella (legal name Sofia Ilieva) rebuilt etiquette for the modern world—turning old-world protocol into a practical refinement system for a digital age.
             </p>
             <ul className="space-y-4 border-l border-gold-500/20 pl-6">
               <li className="flex flex-col">

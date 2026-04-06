@@ -24,7 +24,7 @@ const Booking: React.FC = () => {
                     <span className="text-gold-500 font-sans text-xs tracking-[0.3em] uppercase mb-4 block">Reservation</span>
                     <h1 className="text-4xl md:text-6xl font-serif text-white mb-6">Book a Private Session</h1>
                     <p className="text-xl text-gray-400 font-serif italic max-w-2xl leading-relaxed">
-                        Refinement is an investment in your most valuable asset: yourself. Secure your time for a private consultation with <span className="whitespace-nowrap">Sofia.Marbella</span>.
+                        Refinement is an investment in your most valuable asset: yourself. Secure your time for a private consultation with Sofia Marbella.
                     </p>
                 </header>
 

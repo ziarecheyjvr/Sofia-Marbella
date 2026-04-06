@@ -335,7 +335,7 @@ const TermsConditions: React.FC = () => {
 
       <div className="legal-page animate-in fade-in duration-1000">
         <header>
-          <div className="header-eyebrow"><span className="whitespace-nowrap">Sofia.Marbella</span> · Legal</div>
+          <div className="header-eyebrow">Sofia Marbella · Legal</div>
           <h1 className="header-title">Terms & <em>Conditions</em></h1>
           <p className="header-subtitle">Guidelines for your journey through our world — ensuring clarity, respect, and shared standards.</p>
           <div className="header-ornament text-[160px] md:text-[220px]">SM</div>
@@ -360,7 +360,7 @@ const TermsConditions: React.FC = () => {
               March 3, 2026
             </div>
             <p className="intro-text">
-              These <strong>Terms & Conditions</strong> govern your use of the <span className="whitespace-nowrap">Sofia.Marbella</span> website and any services, content, or products offered through it. By accessing our site, you agree to be bound by these terms — please read them carefully.
+              These <strong>Terms & Conditions</strong> govern your use of the Sofia Marbella website and any services, content, or products offered through it. By accessing our site, you agree to be bound by these terms — please read them carefully.
             </p>
           </div>
 
@@ -386,7 +386,7 @@ const TermsConditions: React.FC = () => {
               <section className="policy-section" id="acceptance">
                 <div className="section-number">01</div>
                 <h2 className="section-heading">Acceptance of <em>Terms</em></h2>
-                <p>By visiting, browsing, or using the <span className="whitespace-nowrap">Sofia.Marbella</span> website (the "Site"), you confirm that you are at least 18 years of age and have the legal capacity to enter into a binding agreement. If you are accessing the Site on behalf of an organisation, you represent that you have the authority to bind that organisation to these terms.</p>
+                <p>By visiting, browsing, or using the Sofia Marbella website (the "Site"), you confirm that you are at least 18 years of age and have the legal capacity to enter into a binding agreement. If you are accessing the Site on behalf of an organisation, you represent that you have the authority to bind that organisation to these terms.</p>
                 <p>Your continued use of the Site constitutes your acceptance of these Terms & Conditions and any updates thereto. If you do not agree with any part of these terms, you must discontinue use of the Site immediately.</p>
               </section>
 
@@ -403,17 +403,17 @@ const TermsConditions: React.FC = () => {
                   <li>Use the Site to send unsolicited commercial communications</li>
                   <li>Misrepresent your identity or impersonate any person or entity</li>
                 </ul>
-                <p><span className="whitespace-nowrap">Sofia.Marbella</span> reserves the right to suspend or terminate access to the Site for any user who violates these terms, at our sole discretion and without prior notice.</p>
+                <p>Sofia Marbella reserves the right to suspend or terminate access to the Site for any user who violates these terms, at our sole discretion and without prior notice.</p>
               </section>
 
               <section className="policy-section" id="intellectual-property">
                 <div className="section-number">03</div>
                 <h2 className="section-heading">Intellectual <em>Property</em></h2>
-                <p>All content on this Site — including but not limited to text, photography, editorial copy, graphics, logos, design elements, and the "The Unspoken Rules" concept — is the exclusive intellectual property of <span className="whitespace-nowrap">Sofia.Marbella</span> and is protected under applicable copyright, trademark, and design laws.</p>
+                <p>All content on this Site — including but not limited to text, photography, editorial copy, graphics, logos, design elements, and the "The Unspoken Rules" concept — is the exclusive intellectual property of Sofia Marbella and is protected under applicable copyright, trademark, and design laws.</p>
                 <div className="callout">
                   <p><strong>Important</strong> — Nothing on this Site grants you a licence to use, reproduce, or distribute our content without prior written authorisation. Unauthorised use of our intellectual property may result in legal action.</p>
                 </div>
-                <p>You may share links to our content for personal, non-commercial purposes, provided attribution is clearly given to <span className="whitespace-nowrap">Sofia.Marbella</span> and no modification is made to the original content.</p>
+                <p>You may share links to our content for personal, non-commercial purposes, provided attribution is clearly given to Sofia Marbella and no modification is made to the original content.</p>
               </section>
 
               <section className="policy-section" id="purchases">
@@ -426,7 +426,7 @@ const TermsConditions: React.FC = () => {
                   <li>Fraud or misuse is suspected</li>
                 </ul>
                 <p>Prices are displayed in the applicable currency and are inclusive of any stated taxes. Shipping costs and applicable duties will be calculated and disclosed at checkout. Payment is required in full at the time of purchase.</p>
-                <p><span className="whitespace-nowrap">Sofia.Marbella</span> uses industry-standard SSL encryption and third-party payment processors. We do not store your full payment card details on our servers.</p>
+                <p>Sofia Marbella uses industry-standard SSL encryption and third-party payment processors. We do not store your full payment card details on our servers.</p>
               </section>
 
               <section className="policy-section" id="returns">
@@ -456,7 +456,7 @@ const TermsConditions: React.FC = () => {
               <section className="policy-section" id="disclaimers">
                 <div className="section-number">07</div>
                 <h2 className="section-heading"><em>Disclaimers</em></h2>
-                <p>The Site and all content therein are provided on an "as is" and "as available" basis, without warranties of any kind, express or implied. <span className="whitespace-nowrap">Sofia.Marbella</span> makes no representations regarding:</p>
+                <p>The Site and all content therein are provided on an "as is" and "as available" basis, without warranties of any kind, express or implied. Sofia Marbella makes no representations regarding:</p>
                 <ul>
                   <li>The accuracy, completeness, or timeliness of any content on the Site</li>
                   <li>The uninterrupted availability of the Site</li>
@@ -469,7 +469,7 @@ const TermsConditions: React.FC = () => {
               <section className="policy-section" id="liability">
                 <div className="section-number">08</div>
                 <h2 className="section-heading">Limitation of <em>Liability</em></h2>
-                <p>To the fullest extent permitted by law, <span className="whitespace-nowrap">Sofia.Marbella</span> shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or in connection with your use of — or inability to use — the Site or its contents.</p>
+                <p>To the fullest extent permitted by law, Sofia Marbella shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or in connection with your use of — or inability to use — the Site or its contents.</p>
                 <p>Our total liability to you for any claim arising in connection with these Terms shall not exceed the amount you paid to us in the three months preceding the claim, or €100, whichever is greater.</p>
                 <p>Nothing in these Terms shall exclude or limit liability that cannot be excluded or limited under applicable consumer protection law.</p>
               </section>
@@ -481,7 +481,7 @@ const TermsConditions: React.FC = () => {
 
                 <div className="contact-card">
                   <div className="contact-card-label">Get in Touch</div>
-                  <h3><span className="whitespace-nowrap">Sofia.Marbella</span><br />Legal Enquiries</h3>
+                  <h3>Sofia Marbella<br />Legal Enquiries</h3>
                   <p>Email: <a href="mailto:legal@sofiamarbella.com" className="hover:text-white transition-colors">legal@sofiamarbella.com</a></p>
                   <p>Website: <a href="https://sofia-marbella.vercel.app" target="_blank" className="hover:text-white transition-colors">sofia-marbella.vercel.app</a></p>
                   <p className="mt-4 text-gray-400">Marbella, Málaga, Spain</p>

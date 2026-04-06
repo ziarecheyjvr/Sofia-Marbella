@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
             <div className="relative z-10 p-1 border border-gold-500/30 group-hover:border-gold-500/60 transition-colors duration-1000 rounded-sm">
               <img
                 src="/assets/images/sofia-marbella-quote.webp"
-                alt="Sofia.Marbella Quote"
+                alt="Sofia Marbella Quote"
                 className="w-full h-auto object-contain mx-auto transform transition-transform duration-1000 hover:scale-[1.01]"
                 loading="lazy"
               />
@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
         <div className="grid md:grid-cols-4 gap-12 py-16">
           <div className="col-span-1 md:col-span-2 space-y-6">
             <div className="text-2xl font-display font-bold text-gold-500 tracking-wider">
-              <span className="whitespace-nowrap">SOFIA.MARBELLA</span>
+              SOFIA MARBELLA
             </div>
             <p className="text-gray-500 text-base leading-relaxed max-w-xs italic">
               "Your manners are your silent business card. Elegance is not inherited. It is practiced."
@@ -83,7 +83,7 @@ const Footer: React.FC = () => {
 
         {/* Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center text-sm text-gray-700 uppercase tracking-widest pt-8 border-t border-white/5">
-          <p>&copy; {new Date().getFullYear()} <span className="whitespace-nowrap">Sofia.Marbella</span>. All Rights Reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Sofia Marbella. All Rights Reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/privacy" className="hover:text-gold-400 transition-colors">Privacy Policy</Link>
             <Link to="/terms" className="hover:text-gold-400 transition-colors">Terms & Conditions</Link>

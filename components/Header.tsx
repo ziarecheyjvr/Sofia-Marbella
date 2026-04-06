@@ -26,7 +26,7 @@ const Header: React.FC = () => {
           to="/"
           className="text-xl md:text-2xl font-display tracking-widest text-gold-400 font-bold uppercase cursor-pointer"
         >
-          <span className="whitespace-nowrap">Sofia.Marbella</span>
+          Sofia Marbella
         </Link>
 
         {/* Desktop Nav */}

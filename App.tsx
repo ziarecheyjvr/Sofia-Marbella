@@ -43,7 +43,7 @@ function App() {
             <Route path="/programs" element={<Services />} />
             <Route path="/shop" element={<Shop />} />
             <Route path="/discounts" element={<Discounts />} />
-            <Route path="/events-and-travels" element={<ComingSoon title="Events & Travels" subtitle="with Sofia Marbella" />} />
+            <Route path="/events-and-travels" element={<ComingSoon title="Events & Travels" subtitle={<>with <span className="whitespace-nowrap">Sofia.Marbella</span></>} />} />
             <Route path="/booking" element={<Booking />} />
             <Route path="/quiz" element={<Quiz />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />

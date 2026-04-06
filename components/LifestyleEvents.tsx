@@ -66,7 +66,7 @@ const LifestyleEvents: React.FC = () => {
                             </div>
 
                             <h3 className="text-4xl md:text-5xl font-serif text-white mb-2">Events &amp; Travels</h3>
-                            <span className="text-gold-500 text-2xl font-serif italic block mb-10">with Sofia Marbella</span>
+                            <span className="text-gold-500 text-2xl font-serif italic block mb-10">with <span className="whitespace-nowrap">Sofia.Marbella</span></span>
 
                             <div className="space-y-8">
                                 <ul className="grid gap-5">

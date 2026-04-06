@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
               In a world that rewards noise, refined women stand out through restraint, structure, and grace.
             </p>
             <p>
-              Sofia Marbella brings etiquette back into modern life—not as decoration, but as an advantage in business, dating, social settings, and digital communication.
+              <span className="whitespace-nowrap">Sofia.Marbella</span> brings etiquette back into modern life—not as decoration, but as an advantage in business, dating, social settings, and digital communication.
             </p>
           </div>
 
@@ -63,7 +63,7 @@ const Hero: React.FC = () => {
           <div className="hidden md:block absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-black to-transparent z-30"></div>
           <img
             src="/assets/videos/hq.gif"
-            alt="Sofia Marbella"
+            alt="Sofia.Marbella"
             className="w-auto h-full max-w-full md:max-w-none max-h-[85vh] md:max-h-full object-contain object-bottom z-20 scale-100 md:scale-105 lg:scale-110 origin-bottom md:translate-x-[5%] transition-transform duration-700"
           />
         </div>

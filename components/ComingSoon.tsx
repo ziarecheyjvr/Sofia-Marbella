@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 interface ComingSoonProps {
     title: string;
-    subtitle?: string;
+    subtitle?: React.ReactNode;
 }
 
 const ComingSoon: React.FC<ComingSoonProps> = ({ title, subtitle }) => {

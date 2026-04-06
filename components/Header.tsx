@@ -26,19 +26,19 @@ const Header: React.FC = () => {
           to="/"
           className="text-xl md:text-2xl font-display tracking-widest text-gold-400 font-bold uppercase cursor-pointer"
         >
-          Sofia Marbella
+          <span className="whitespace-nowrap">Sofia.Marbella</span>
         </Link>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center space-x-8">
           {NAV_ITEMS.map((item) => (
-            <a
+            <Link
               key={item.label}
-              href={item.href}
+              to={item.href}
               className="text-xs font-sans tracking-[0.2em] text-gray-300 hover:text-gold-400 transition-colors uppercase"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
           <button className="text-gold-400 hover:text-gold-200 transition-colors">
             <ShoppingBag size={20} />
@@ -60,14 +60,14 @@ const Header: React.FC = () => {
       {mobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-charcoal-900 border-b border-white/10 p-6 flex flex-col space-y-4 shadow-2xl">
           {NAV_ITEMS.map((item) => (
-            <a
+            <Link
               key={item.label}
-              href={item.href}
+              to={item.href}
               onClick={() => setMobileMenuOpen(false)}
               className="text-sm font-sans tracking-widest text-gray-300 hover:text-gold-400 uppercase py-2 border-b border-white/5"
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </div>
       )}

@@ -336,7 +336,7 @@ const PrivacyPolicy: React.FC = () => {
 
       <div className="privacy-policy animate-in fade-in duration-1000">
         <header>
-          <div className="header-eyebrow">Sofia Marbella · Legal</div>
+          <div className="header-eyebrow"><span className="whitespace-nowrap">Sofia.Marbella</span> · Legal</div>
           <h1 className="header-title">Privacy <em>Policy</em></h1>
           <p className="header-subtitle">How we honour your trust, protect your information, and uphold the discretion this world demands.</p>
           <div className="header-ornament text-[160px] md:text-[220px]">SM</div>
@@ -360,7 +360,7 @@ const PrivacyPolicy: React.FC = () => {
               March 3, 2026
             </div>
             <p className="intro-text">
-              At <strong>Sofia Marbella</strong>, privacy is not a formality — it is part of the unspoken contract between us. This Policy explains, plainly and completely, what information we gather when you visit our world, and how we treat it with the same discretion we extend to every guest.
+              At <strong><span className="whitespace-nowrap">Sofia.Marbella</span></strong>, privacy is not a formality — it is part of the unspoken contract between us. This Policy explains, plainly and completely, what information we gather when you visit our world, and how we treat it with the same discretion we extend to every guest.
             </p>
           </div>
 
@@ -420,7 +420,7 @@ const PrivacyPolicy: React.FC = () => {
               <section className="policy-section" id="sharing">
                 <div className="section-number">03</div>
                 <h2 className="section-heading">Sharing <em>& Disclosure</em></h2>
-                <p>Sofia Marbella does not sell, rent, or trade your personal information. Full stop.</p>
+                <p><span className="whitespace-nowrap">Sofia.Marbella</span> does not sell, rent, or trade your personal information. Full stop.</p>
                 <p>We may share limited data with trusted service providers who assist us in operating the website — such as hosting infrastructure or email delivery platforms. These partners are contractually bound to handle your data with the same care we do, and are permitted to use it only on our behalf.</p>
                 <p>We may also disclose information when required by law, court order, or to protect the rights and safety of our users or the public.</p>
                 <div className="callout">
@@ -483,7 +483,7 @@ const PrivacyPolicy: React.FC = () => {
 
                 <div className="contact-card">
                   <div className="contact-card-label">Get in Touch</div>
-                  <h3>Sofia Marbella<br />Privacy & Data Enquiries</h3>
+                  <h3><span className="whitespace-nowrap">Sofia.Marbella</span><br />Privacy & Data Enquiries</h3>
                   <p>Email: <a href="mailto:ceo@sofia.style" className="hover:text-white transition-colors">ceo@sofia.style</a></p>
                   <p>Website: <a href="https://sofia-marbella.vercel.app" target="_blank" className="hover:text-white transition-colors">sofia-marbella.vercel.app</a></p>
                   <p className="mt-4 text-gray-400">Marbella, Costa del Sol, Spain</p>

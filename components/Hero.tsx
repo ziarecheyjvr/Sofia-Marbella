@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 pt-4 flex-wrap pb-12 justify-center md:justify-start">
             <a
-              href="#checklist"
+              href="#guide"
               className="w-full sm:w-auto bg-gold-600 text-charcoal-950 px-6 py-4 font-sans uppercase tracking-widest text-xs font-bold hover:bg-gold-500 transition-all shadow-[0_0_20px_rgba(217,167,74,0.2)] inline-block text-center"
             >
               Get the Free Guide

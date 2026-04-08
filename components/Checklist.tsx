@@ -6,7 +6,7 @@ const Checklist: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section id="checklist" className="py-24 bg-charcoal-900 relative overflow-hidden border-t border-white/5">
+    <section id="guide" className="py-24 bg-charcoal-900 relative overflow-hidden border-t border-white/5">
       {/* Decorative Background Aura */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-gold-600/10 rounded-full blur-[150px] opacity-60"></div>

@@ -2,7 +2,6 @@ import React from 'react';
 import { ExternalLink, Tag } from 'lucide-react';
 
 const affiliates = [
-  { name: 'MOTF', url: '#', type: 'Premium Fashion' },
   { 
     name: 'Ogee', 
     url: 'https://ogee.com/en-eu', 

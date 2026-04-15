@@ -56,10 +56,17 @@ const FreeGuideForm: React.FC<FreeGuideFormProps> = ({ layout = 'columns' }) => 
       {status === 'success' ? (
         <div className="bg-charcoal-950/50 border border-gold-500/30 p-6 text-center">
           <p className="text-gold-500 font-serif text-lg mb-2">Thank you for joining.</p>
-          <p className="text-gray-400 text-sm">Your guide is on its way to your inbox.</p>
+          <p className="text-gray-400 text-sm mb-6">Your guide is on its way to your inbox.</p>
+          <a
+            href="/assets/files/sofia-marbella-free-guide.pdf"
+            download
+            className="inline-block w-full bg-gold-600 text-black py-3 px-6 font-bold uppercase tracking-widest text-xs hover:bg-gold-500 transition-colors mb-4"
+          >
+            Download Now
+          </a>
           <button
             onClick={() => setStatus('idle')}
-            className="mt-4 text-xs text-gray-500 underline hover:text-gold-500 transition-colors uppercase tracking-widest"
+            className="mt-4 text-xs text-gray-400 hover:text-gold-500 transition-colors uppercase tracking-[0.2em]"
           >
             Send to another email
           </button>

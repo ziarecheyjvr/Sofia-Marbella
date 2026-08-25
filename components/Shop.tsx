@@ -246,23 +246,16 @@ const Shop: React.FC = () => {
                 ))}
               </ul>
 
-              <div className="pt-4 flex flex-col sm:flex-row gap-4">
+              <div className="pt-4">
                 <a
                   href={SHOP_PRODUCTS[0].href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-gold-600 hover:bg-gold-500 text-white px-8 py-4 font-sans uppercase tracking-[0.2em] text-xs transition-colors rounded shadow-lg text-center flex-1 font-semibold flex items-center justify-center gap-2"
+                  className="w-full bg-gold-600 hover:bg-gold-500 text-white px-8 py-4 font-sans uppercase tracking-[0.2em] text-xs transition-colors rounded shadow-lg text-center font-semibold flex items-center justify-center gap-2"
                 >
-                  <span>Book / Buy Now</span>
+                  <span>Buy Now</span>
                   <ExternalLink size={14} />
                 </a>
-
-                <button
-                  onClick={() => handleOpenCheckout(SHOP_PRODUCTS[0])}
-                  className="border border-white/20 hover:border-gold-400 text-gray-300 hover:text-white px-6 py-4 font-sans uppercase tracking-[0.2em] text-xs transition-colors rounded text-center"
-                >
-                  Quick Checkout
-                </button>
               </div>
             </div>
           </div>

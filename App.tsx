@@ -19,6 +19,7 @@ import Quiz from './components/Quiz';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsConditions from './components/TermsConditions';
 import OrderSuccess from './components/OrderSuccess';
+import NotFound from './components/NotFound';
 
 
 const HomePage: React.FC = () => (
@@ -51,6 +52,7 @@ function App() {
             <Route path="/terms" element={<TermsConditions />} />
             <Route path="/order-success" element={<OrderSuccess />} />
             <Route path="/order-confirmation" element={<OrderSuccess />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />

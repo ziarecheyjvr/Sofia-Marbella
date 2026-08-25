@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sofia.Marbella | The Unspoken Rules</title>
+    <title>Sofia.Marbella | Modern Etiquette</title>
     <link rel="icon" type="image/png" href="/assets/images/waxseal.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,11 +20,11 @@
             },
             colors: {
               gold: {
-                100: '#FCF5E5', // Warmer Cream
-                200: '#F6E4BC', // Champagne
-                300: '#EDCF8E', // Warm Sand
-                400: '#E4BB65', // Honey
-                500: '#D9A74A', // Warmer Rich Gold (previously D4AF37)
+                100: '#FCF5E5',
+                200: '#F6E4BC',
+                300: '#EDCF8E',
+                400: '#E4BB65',
+                500: '#D9A74A',
                 600: '#AE863B',
                 700: '#83642C',
                 800: '#57431D',
@@ -32,13 +32,9 @@
               },
               charcoal: {
                 800: '#1A1A1A',
-                900: '#0F0F0F', // Deep background
+                900: '#0F0F0F',
                 950: '#050505',
               }
-            },
-            backgroundImage: {
-              'luxury-gradient': 'linear-gradient(to right bottom, #1a1a1a, #0f0f0f)',
-              'gold-gradient': 'linear-gradient(45deg, #AE863B, #D9A74A, #FCF5E5, #D9A74A, #AE863B)',
             }
           }
         }
@@ -49,34 +45,21 @@
         background-color: #050505;
         color: #e5e5e5;
       }
-      .text-gradient-gold {
-        background: linear-gradient(to right, #D9A74A, #FCF5E5, #D9A74A);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-size: 200% auto;
-        animation: shine 5s linear infinite;
-      }
-      @keyframes shine {
-        to {
-          background-position: 200% center;
-        }
-      }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
+    <script type="importmap">
+    {
+      "imports": {
+        "lucide-react": "https://esm.sh/lucide-react@^0.564.0",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+        "react/": "https://esm.sh/react@^19.2.4/",
+        "react": "https://esm.sh/react@^19.2.4"
+      }
+    }
+    </script>
+    <link rel="stylesheet" href="/index.css">
+  </head>
   <body>
     <div id="root"></div>
-  <script type="module" src="/index.tsx"></script>
-</body>
+    <script type="module" src="/index.tsx"></script>
+  </body>
 </html>

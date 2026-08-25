@@ -198,17 +198,6 @@ const Shop: React.FC = () => {
         <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-light">
           Because details define distinction. Journals, books, and private lessons designed to integrate grace and composure into daily life.
         </p>
-
-        {/* Demo Callout Banner */}
-        <div className="pt-4 flex flex-wrap justify-center items-center gap-4">
-          <button
-            onClick={handleDirectDemoOrder}
-            className="inline-flex items-center gap-2 bg-gold-500/10 hover:bg-gold-500/20 border border-gold-500/40 text-gold-300 px-5 py-2.5 rounded-full text-xs font-sans uppercase tracking-[0.2em] transition-all"
-          >
-            <Sparkles className="w-4 h-4 text-gold-400" />
-            <span>View Sample Order Confirmation Page</span>
-          </button>
-        </div>
       </div>
 
       {/* Featured Signature Item (Hero Product) */}

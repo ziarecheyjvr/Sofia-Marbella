@@ -41,7 +41,7 @@ const SHOP_PRODUCTS: ShopProduct[] = [
     subtitle: '60 Minutes Personal Coaching with Sofia Marbella',
     price: 150.00,
     image: '/assets/images/bc3b83bf-f49b-4639-a5ba-9cec59f638d5.jpg',
-    objectPosition: 'object-[center_35%]',
+    objectPosition: 'object-top',
     type: 'service',
     badge: 'Adult Lesson',
     href: 'https://link.fastpaydirect.com/payment-link/6a8d61eed6768df054447d07',

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { ShoppingBag, Sparkles, Check, ArrowRight, ShieldCheck, CreditCard, X, Truck, BookOpen, Star } from 'lucide-react';
-import { OrderDetails, OrderItem } from '../types';
+import { ShoppingBag, Sparkles, Check, ArrowRight, ShieldCheck, CreditCard, X, ExternalLink } from 'lucide-react';
+import { OrderDetails } from '../types';
 
 interface ShopProduct {
   id: string;
@@ -13,17 +13,19 @@ interface ShopProduct {
   description: string;
   badge?: string;
   features: string[];
+  href?: string;
 }
 
 const SHOP_PRODUCTS: ShopProduct[] = [
   {
     id: 'gentle-reminder-journal',
     title: 'The Gentle Reminder Journal',
-    subtitle: 'Velvet Gold Embossed Edition • 52 Principles',
+    subtitle: 'Velvet Gold Embossed Edition • 52 Principles of Etiquette',
     price: 68.00,
     image: '/assets/images/gentle-reminder.jpg',
     type: 'physical',
     badge: 'Signature Tool',
+    href: 'https://link.fastpaydirect.com/payment-link/6a8d6296d6768df054447d08',
     description: 'A velvet-bound discipline journal featuring 52 essential etiquette principles, designed to integrate refinement into daily life through structure and self-awareness.',
     features: [
       '52 Weekly Discipline Prompts & Reflection Grids',
@@ -40,6 +42,7 @@ const SHOP_PRODUCTS: ShopProduct[] = [
     image: '/assets/images/ettiquette.jpg',
     type: 'service',
     badge: 'Most Requested',
+    href: 'https://link.fastpaydirect.com/payment-link/6a8d61eed6768df054447d07',
     description: 'A focused private session to refine your presence in real time—whether you’re preparing for business, dating, travel, public visibility, or a personal reinvention.',
     features: [
       'Body language and posture calibration',
@@ -66,12 +69,13 @@ const SHOP_PRODUCTS: ShopProduct[] = [
   },
   {
     id: 'private-short-course',
-    title: 'Adult Refinement Master Course',
-    subtitle: '3 Private Intensive Sessions (60 Mins Each)',
+    title: 'One to One Etiquette & Manners Short Course',
+    subtitle: '3 Private Intensive Sessions (60 Mins Each) for Adults',
     price: 650.00,
     image: '/assets/images/sofia-2.jpg',
     type: 'service',
     badge: 'Comprehensive',
+    href: 'https://link.fastpaydirect.com/payment-link/6a8d61c4d6768df054447d06',
     description: 'A structured 3-part transformation covering Personal Grace, Professional Authority, and High-Society Hosting.',
     features: [
       'Session 1: Posture, Voice Tone & Personal Presence',
@@ -147,15 +151,6 @@ const Shop: React.FC = () => {
             quantity: 1,
             image: selectedProduct.image,
             type: selectedProduct.type,
-          },
-          {
-            id: 'bonus-codex',
-            title: 'Complimentary Refinement Codex',
-            subtitle: 'VIP Order Bonus PDF',
-            price: 0.00,
-            quantity: 1,
-            image: '/assets/images/hero-1.png',
-            type: 'digital',
           }
         ],
         subtotal: selectedProduct.price,
@@ -163,9 +158,7 @@ const Shop: React.FC = () => {
         discount: discount,
         tax: tax,
         total: total,
-        status: 'processing',
-        trackingNumber: `DHL-SM-${Math.floor(100000 + Math.random() * 900000)}`,
-        estimatedDelivery: 'September 1, 2026',
+        status: 'confirmed'
       };
 
       setIsSubmitting(false);
@@ -237,11 +230,21 @@ const Shop: React.FC = () => {
               </ul>
 
               <div className="pt-4 flex flex-col sm:flex-row gap-4">
+                <a
+                  href={SHOP_PRODUCTS[0].href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gold-600 hover:bg-gold-500 text-white px-8 py-4 font-sans uppercase tracking-[0.2em] text-xs transition-colors rounded shadow-lg text-center flex-1 font-semibold flex items-center justify-center gap-2"
+                >
+                  <span>Book Now</span>
+                  <ExternalLink size={14} />
+                </a>
+
                 <button
                   onClick={() => handleOpenCheckout(SHOP_PRODUCTS[0])}
-                  className="bg-gold-600 hover:bg-gold-500 text-white px-8 py-4 font-sans uppercase tracking-[0.2em] text-xs transition-colors rounded shadow-lg text-center flex-1 font-semibold"
+                  className="border border-white/20 hover:border-gold-400 text-gray-300 hover:text-white px-6 py-4 font-sans uppercase tracking-[0.2em] text-xs transition-colors rounded text-center"
                 >
-                  Order Essential Journal
+                  Quick Checkout
                 </button>
               </div>
             </div>
@@ -291,14 +294,26 @@ const Shop: React.FC = () => {
                 </p>
               </div>
 
-              <div className="pt-6">
-                <button
-                  onClick={() => handleOpenCheckout(product)}
-                  className="w-full bg-charcoal-900 hover:bg-gold-600 text-gray-200 hover:text-white border border-white/20 hover:border-gold-500 py-3 rounded text-xs font-sans uppercase tracking-[0.2em] transition-all flex items-center justify-center gap-2"
-                >
-                  <span>Select & Order</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </button>
+              <div className="pt-6 space-y-2">
+                {product.href ? (
+                  <a
+                    href={product.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-gold-600 hover:bg-gold-500 text-white py-3 rounded text-xs font-sans uppercase tracking-[0.2em] font-semibold transition-all flex items-center justify-center gap-2"
+                  >
+                    <span>Book Now</span>
+                    <ExternalLink size={14} />
+                  </a>
+                ) : (
+                  <button
+                    onClick={() => handleOpenCheckout(product)}
+                    className="w-full bg-gold-600 hover:bg-gold-500 text-white py-3 rounded text-xs font-sans uppercase tracking-[0.2em] font-semibold transition-all flex items-center justify-center gap-2"
+                  >
+                    <span>Book Now</span>
+                    <ArrowRight className="w-3.5 h-3.5" />
+                  </button>
+                )}
               </div>
             </div>
           ))}

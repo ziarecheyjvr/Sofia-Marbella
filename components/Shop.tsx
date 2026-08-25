@@ -9,6 +9,7 @@ interface ShopProduct {
   subtitle: string;
   price: number;
   image: string;
+  objectPosition?: string;
   type: 'physical' | 'digital' | 'service';
   description: string;
   badge?: string;
@@ -40,6 +41,7 @@ const SHOP_PRODUCTS: ShopProduct[] = [
     subtitle: '60 Minutes Personal Coaching with Sofia Marbella',
     price: 150.00,
     image: '/assets/images/bc3b83bf-f49b-4639-a5ba-9cec59f638d5.jpg',
+    objectPosition: 'object-[center_35%]',
     type: 'service',
     badge: 'Adult Lesson',
     href: 'https://link.fastpaydirect.com/payment-link/6a8d61eed6768df054447d07',
@@ -268,7 +270,7 @@ const Shop: React.FC = () => {
                   <img 
                     src={product.image} 
                     alt={product.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className={`w-full h-full object-cover ${product.objectPosition || 'object-center'} group-hover:scale-105 transition-transform duration-500`}
                     onError={(e) => {
                       (e.target as HTMLElement).setAttribute('src', '/assets/images/ettiquette.jpg');
                     }}

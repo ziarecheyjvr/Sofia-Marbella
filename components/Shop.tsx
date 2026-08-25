@@ -313,23 +313,16 @@ const Shop: React.FC = () => {
                 </ul>
               </div>
 
-              <div className="pt-6 flex gap-3">
+              <div className="pt-6">
                 <a
                   href={product.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex-1 bg-gold-600 hover:bg-gold-500 text-white py-3 rounded text-xs font-sans uppercase tracking-[0.2em] font-semibold transition-all flex items-center justify-center gap-2 shadow-md"
+                  className="w-full bg-gold-600 hover:bg-gold-500 text-white py-3.5 rounded text-xs font-sans uppercase tracking-[0.2em] font-semibold transition-all flex items-center justify-center gap-2 shadow-md text-center"
                 >
                   <span>Book Now</span>
                   <ExternalLink size={14} />
                 </a>
-
-                <button
-                  onClick={() => handleOpenCheckout(product)}
-                  className="px-4 border border-white/20 hover:border-gold-400 text-gray-300 hover:text-white rounded text-xs font-sans uppercase tracking-[0.15em] transition-all"
-                >
-                  Checkout
-                </button>
               </div>
             </div>
           ))}

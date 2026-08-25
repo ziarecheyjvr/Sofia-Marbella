@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useNavigate, Link } from 'react-router-dom';
-import { ShoppingBag, Sparkles, Check, ArrowRight, ShieldCheck, CreditCard, X, ExternalLink } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+import { Sparkles, Check, ArrowRight, ShieldCheck, CreditCard, X, ExternalLink } from 'lucide-react';
 import { OrderDetails } from '../types';
 
 interface ShopProduct {
@@ -13,18 +13,18 @@ interface ShopProduct {
   description: string;
   badge?: string;
   features: string[];
-  href?: string;
+  href: string;
 }
 
 const SHOP_PRODUCTS: ShopProduct[] = [
   {
-    id: 'gentle-reminder-journal',
-    title: 'The Gentle Reminder Journal',
+    id: 'gentle-reminder-notebook',
+    title: 'Gentle Reminder → Notebook with 52 Rules of Etiquette and Manner',
     subtitle: 'Velvet Gold Embossed Edition • 52 Principles of Etiquette',
-    price: 68.00,
+    price: 49.99,
     image: '/assets/images/gentle-reminder.jpg',
     type: 'physical',
-    badge: 'Signature Tool',
+    badge: 'Signature Notebook',
     href: 'https://link.fastpaydirect.com/payment-link/6a8d6296d6768df054447d08',
     description: 'A velvet-bound discipline journal featuring 52 essential etiquette principles, designed to integrate refinement into daily life through structure and self-awareness.',
     features: [
@@ -35,13 +35,13 @@ const SHOP_PRODUCTS: ShopProduct[] = [
     ]
   },
   {
-    id: 'private-1on1-session',
-    title: '1:1 Private Etiquette & Presence Session',
+    id: '1-1-adult-lesson',
+    title: '1-1 Lesson on Etiquette & Manners (60min)',
     subtitle: '60 Minutes Personal Coaching with Sofia Marbella',
-    price: 250.00,
+    price: 150.00,
     image: '/assets/images/ettiquette.jpg',
     type: 'service',
-    badge: 'Most Requested',
+    badge: 'Adult Lesson',
     href: 'https://link.fastpaydirect.com/payment-link/6a8d61eed6768df054447d07',
     description: 'A focused private session to refine your presence in real time—whether you’re preparing for business, dating, travel, public visibility, or a personal reinvention.',
     features: [
@@ -52,36 +52,53 @@ const SHOP_PRODUCTS: ShopProduct[] = [
     ]
   },
   {
-    id: 'unspoken-rules-codex',
-    title: 'The Unspoken Rules Digital Codex',
-    subtitle: 'Instant PDF Guide + Audio Masterclass',
-    price: 39.00,
-    image: '/assets/images/hero-1.png',
-    type: 'digital',
-    badge: 'Instant Access',
-    description: 'The definitive digital handbook on high-society etiquette, executive poise, and non-verbal authority. Accessible instantly on all devices.',
-    features: [
-      '140+ Pages of Strategic Social Protocols',
-      'Dining & Gala Event Seating Schematics',
-      'Digital & Email Executive Etiquette Templates',
-      'Audio Commentary by Sofia Marbella'
-    ]
-  },
-  {
-    id: 'private-short-course',
-    title: 'One to One Etiquette & Manners Short Course',
-    subtitle: '3 Private Intensive Sessions (60 Mins Each) for Adults',
-    price: 650.00,
+    id: 'adult-short-course',
+    title: 'One to One Etiquette & Manners Short Course (for Adults)',
+    subtitle: '3 Private Intensive Sessions (60 Mins Each)',
+    price: 400.00,
     image: '/assets/images/sofia-2.jpg',
     type: 'service',
-    badge: 'Comprehensive',
+    badge: 'Adult Short Course',
     href: 'https://link.fastpaydirect.com/payment-link/6a8d61c4d6768df054447d06',
-    description: 'A structured 3-part transformation covering Personal Grace, Professional Authority, and High-Society Hosting.',
+    description: 'A structured 3-part transformation for adults covering Personal Grace, Professional Authority, and High-Society Protocol.',
     features: [
       'Session 1: Posture, Voice Tone & Personal Presence',
       'Session 2: Business Etiquette & Executive Composure',
       'Session 3: Fine Dining & High-Society Protocol',
       'Direct WhatsApp Access to Sofia during the course'
+    ]
+  },
+  {
+    id: 'youth-private-lesson',
+    title: 'Etiquette & Manners Private Lesson for Kids/Young Adults (60min)',
+    subtitle: '60 Minutes Private Personalized Youth Coaching',
+    price: 140.00,
+    image: '/assets/images/3.jpg',
+    type: 'service',
+    badge: 'Youth Private Lesson',
+    href: 'https://link.fastpaydirect.com/payment-link/6a8d6257f9c8c807930b9e54',
+    description: 'Private Youth Lesson designed to instill self-respect, respectful greetings, poise, and polite communication from an early age.',
+    features: [
+      'First impressions & respectful greetings',
+      'Posture & body awareness calibration',
+      'Dining confidence & table manners',
+      'Polite communication and digital respect'
+    ]
+  },
+  {
+    id: 'youth-short-course',
+    title: 'Etiquette & Manners Course (3 Lessons / 50 min each) for Kids/Young Adults',
+    subtitle: '3 Foundation Sessions (50 Mins Each)',
+    price: 360.00,
+    image: '/assets/images/2.jpg',
+    type: 'service',
+    badge: 'Youth Short Course',
+    href: 'https://link.fastpaydirect.com/payment-link/6a8d5d66d6768df054447cfb',
+    description: 'A structured foundation in first impressions, social graces, and essential table manners—designed to build confidence and poise for young adults.',
+    features: [
+      'Lesson 1: Greetings, Eye Contact & Introduction Etiquette',
+      'Lesson 2: Posture, Body Language & Social Graces',
+      'Lesson 3: Fine Dining Etiquette & Table Manners'
     ]
   }
 ];
@@ -179,7 +196,7 @@ const Shop: React.FC = () => {
         <span className="text-gold-500 font-sans text-xs tracking-[0.3em] uppercase block">Signature Tools & Curated Lessons</span>
         <h1 className="text-4xl md:text-5xl font-serif text-white">Refinement Essentials</h1>
         <p className="text-gray-400 text-base md:text-lg max-w-2xl mx-auto leading-relaxed font-light">
-          Because details define distinction. Journals, codices, and private lessons designed to integrate grace and composure into daily life.
+          Because details define distinction. Journals, books, and private lessons designed to integrate grace and composure into daily life.
         </p>
 
         {/* Demo Callout Banner */}
@@ -215,7 +232,7 @@ const Shop: React.FC = () => {
                 {SHOP_PRODUCTS[0].badge}
               </span>
               <h2 className="text-3xl md:text-4xl font-serif text-white">{SHOP_PRODUCTS[0].title}</h2>
-              <p className="text-gold-400 font-serif text-2xl font-semibold">€{SHOP_PRODUCTS[0].price.toFixed(2)}</p>
+              <p className="text-gold-400 font-serif text-2xl font-semibold">€{SHOP_PRODUCTS[0].price.toFixed(2)} EUR</p>
               <p className="text-gray-400 leading-relaxed font-sans text-sm">
                 {SHOP_PRODUCTS[0].description}
               </p>
@@ -236,7 +253,7 @@ const Shop: React.FC = () => {
                   rel="noopener noreferrer"
                   className="bg-gold-600 hover:bg-gold-500 text-white px-8 py-4 font-sans uppercase tracking-[0.2em] text-xs transition-colors rounded shadow-lg text-center flex-1 font-semibold flex items-center justify-center gap-2"
                 >
-                  <span>Book Now</span>
+                  <span>Book / Buy Now</span>
                   <ExternalLink size={14} />
                 </a>
 
@@ -258,14 +275,14 @@ const Shop: React.FC = () => {
           All Refinement Products & Programs
         </h3>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8">
           {SHOP_PRODUCTS.slice(1).map((product) => (
             <div 
               key={product.id}
               className="bg-charcoal-950 border border-white/10 hover:border-gold-500/40 rounded-xl p-6 flex flex-col justify-between transition-all duration-300 shadow-xl group"
             >
               <div className="space-y-4">
-                <div className="aspect-[4/3] rounded overflow-hidden border border-white/10 relative">
+                <div className="aspect-[16/9] rounded overflow-hidden border border-white/10 relative">
                   <img 
                     src={product.image} 
                     alt={product.title}
@@ -275,45 +292,51 @@ const Shop: React.FC = () => {
                     }}
                   />
                   {product.badge && (
-                    <span className="absolute top-2 right-2 bg-charcoal-900/90 text-gold-400 border border-gold-500/30 text-[9px] uppercase tracking-wider px-2 py-0.5 rounded font-sans">
+                    <span className="absolute top-2 right-2 bg-charcoal-900/90 text-gold-400 border border-gold-500/30 text-[9px] uppercase tracking-wider px-2.5 py-1 rounded font-sans font-semibold">
                       {product.badge}
                     </span>
                   )}
                 </div>
 
-                <div className="space-y-1">
+                <div className="space-y-2">
                   <span className="text-[10px] text-gray-400 uppercase tracking-widest block font-sans">{product.type}</span>
-                  <h4 className="text-xl font-serif text-white">{product.title}</h4>
-                  <p className="text-xs text-gray-400 font-sans line-clamp-2">{product.subtitle}</p>
+                  <h4 className="text-xl font-serif text-white leading-snug">{product.title}</h4>
+                  <p className="text-xs text-gray-400 font-sans">{product.subtitle}</p>
                 </div>
 
-                <p className="text-gold-400 font-serif text-xl font-bold">€{product.price.toFixed(2)}</p>
+                <p className="text-gold-400 font-serif text-2xl font-bold">€{product.price.toFixed(2)} EUR</p>
                 
-                <p className="text-xs text-gray-300 font-sans leading-relaxed line-clamp-3">
+                <p className="text-xs text-gray-300 font-sans leading-relaxed">
                   {product.description}
                 </p>
+
+                <ul className="space-y-1.5 text-xs text-gray-400 font-sans pt-2 border-t border-white/5">
+                  {product.features.map((feat, i) => (
+                    <li key={i} className="flex items-center gap-2">
+                      <span className="text-gold-500 text-[10px]">✦</span>
+                      <span>{feat}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
 
-              <div className="pt-6 space-y-2">
-                {product.href ? (
-                  <a
-                    href={product.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-full bg-gold-600 hover:bg-gold-500 text-white py-3 rounded text-xs font-sans uppercase tracking-[0.2em] font-semibold transition-all flex items-center justify-center gap-2"
-                  >
-                    <span>Book Now</span>
-                    <ExternalLink size={14} />
-                  </a>
-                ) : (
-                  <button
-                    onClick={() => handleOpenCheckout(product)}
-                    className="w-full bg-gold-600 hover:bg-gold-500 text-white py-3 rounded text-xs font-sans uppercase tracking-[0.2em] font-semibold transition-all flex items-center justify-center gap-2"
-                  >
-                    <span>Book Now</span>
-                    <ArrowRight className="w-3.5 h-3.5" />
-                  </button>
-                )}
+              <div className="pt-6 flex gap-3">
+                <a
+                  href={product.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 bg-gold-600 hover:bg-gold-500 text-white py-3 rounded text-xs font-sans uppercase tracking-[0.2em] font-semibold transition-all flex items-center justify-center gap-2 shadow-md"
+                >
+                  <span>Book Now</span>
+                  <ExternalLink size={14} />
+                </a>
+
+                <button
+                  onClick={() => handleOpenCheckout(product)}
+                  className="px-4 border border-white/20 hover:border-gold-400 text-gray-300 hover:text-white rounded text-xs font-sans uppercase tracking-[0.15em] transition-all"
+                >
+                  Checkout
+                </button>
               </div>
             </div>
           ))}

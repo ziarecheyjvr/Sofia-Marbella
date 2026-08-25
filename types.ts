@@ -9,6 +9,7 @@ export interface ServicePackage {
   title: string;
   duration?: string;
   audience?: string;
+  price?: string;
   description: string;
   features: string[];
   cta: string;

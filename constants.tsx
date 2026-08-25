@@ -139,9 +139,10 @@ export const METHOD_DIMENSIONS: Dimension[] = [
 
 export const SERVICES: ServicePackage[] = [
   {
-    title: "1:1 Private Etiquette & Presence Session",
+    title: "1-1 Lesson on Etiquette & Manners (60min)",
     duration: "60 Minutes",
     audience: "Adults | Private",
+    price: "€150,00 EUR",
     description: "A focused private session to refine your presence in real time—whether you’re preparing for business, dating, travel, public visibility, or a personal reinvention.",
     features: [
       "Body language and posture calibration",
@@ -154,9 +155,10 @@ export const SERVICES: ServicePackage[] = [
     href: "https://link.fastpaydirect.com/payment-link/6a8d61eed6768df054447d07"
   },
   {
-    title: "Private Short Course",
+    title: "One to One Etiquette & Manners Short Course (for Adults)",
     duration: "3 Private Sessions | 60 Minutes Each",
     audience: "Adults",
+    price: "€400,00 EUR",
     description: "A structured refinement program for women who want deeper transformation—not inspiration that fades. Choose your focus:",
     features: [
       "PERSONAL: posture, grooming, dining, boundaries",
@@ -167,9 +169,10 @@ export const SERVICES: ServicePackage[] = [
     href: "https://link.fastpaydirect.com/payment-link/6a8d61c4d6768df054447d06"
   },
   {
-    title: "Youth Excellence",
+    title: "Etiquette & Manners Private Lesson for Kids/Young Adults (60min)",
     duration: "60 Minutes | Personalized",
-    audience: "Under 18",
+    audience: "Kids & Young Adults",
+    price: "€140,00 EUR",
     description: "Private Youth Lesson. Confidence is built—not wished for.",
     features: [
       "First impressions & respectful greetings",
@@ -182,11 +185,16 @@ export const SERVICES: ServicePackage[] = [
     href: "https://link.fastpaydirect.com/payment-link/6a8d6257f9c8c807930b9e54"
   },
   {
-    title: "Youth Short Course",
-    duration: "3 Lessons | 50–60 Minutes Each",
-    audience: "Youth",
+    title: "Etiquette & Manners Course (3 Lessons / 50 min each) for Kids/Young Adults",
+    duration: "3 Lessons | 50 Minutes Each",
+    audience: "Kids & Young Adults",
+    price: "€360,00 EUR",
     description: "A structured foundation in first impressions, social graces, and essential table manners—designed to build confidence, not entitlement.",
-    features: [],
+    features: [
+      "First impressions & polite greetings",
+      "Social graces & posture calibration",
+      "Table manners & dining confidence"
+    ],
     cta: "Book Now",
     href: "https://link.fastpaydirect.com/payment-link/6a8d5d66d6768df054447cfb"
   }

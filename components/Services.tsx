@@ -22,7 +22,12 @@ const Services: React.FC = () => {
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
               <div className="mb-6">
-                <span className="text-sm font-sans tracking-[0.2em] text-gold-500/70 uppercase block mb-2">{service.audience}</span>
+                <div className="flex justify-between items-start mb-2">
+                  <span className="text-sm font-sans tracking-[0.2em] text-gold-500/70 uppercase block">{service.audience}</span>
+                  {service.price && (
+                    <span className="text-gold-400 font-serif font-semibold text-lg">{service.price}</span>
+                  )}
+                </div>
                 <h3 className="text-2xl font-serif text-white mb-2">{service.title}</h3>
                 <span className="text-base text-gray-500 font-sans border-b border-white/10 pb-4 block">{service.duration}</span>
               </div>

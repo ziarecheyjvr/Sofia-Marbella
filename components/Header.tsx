@@ -40,16 +40,16 @@ const Header: React.FC = () => {
               {item.label}
             </Link>
           ))}
-          <button className="text-gold-400 hover:text-gold-200 transition-colors">
+          <Link to="/shop" className="text-gold-400 hover:text-gold-200 transition-colors" title="View Shop & Orders">
             <ShoppingBag size={20} />
-          </button>
+          </Link>
         </div>
 
         {/* Mobile Menu Toggle */}
         <div className="md:hidden flex items-center gap-4">
-          <button className="text-gold-400">
+          <Link to="/shop" className="text-gold-400" title="View Shop">
             <ShoppingBag size={20} />
-          </button>
+          </Link>
           <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-white">
             {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>

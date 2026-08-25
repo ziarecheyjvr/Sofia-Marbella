@@ -18,6 +18,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Quiz from './components/Quiz';
 import PrivacyPolicy from './components/PrivacyPolicy';
 import TermsConditions from './components/TermsConditions';
+import OrderSuccess from './components/OrderSuccess';
 
 
 const HomePage: React.FC = () => (
@@ -48,8 +49,9 @@ function App() {
             <Route path="/quiz" element={<Quiz />} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermsConditions />} />
+            <Route path="/order-success" element={<OrderSuccess />} />
+            <Route path="/order-confirmation" element={<OrderSuccess />} />
           </Routes>
-
         </main>
         <Footer />
       </div>

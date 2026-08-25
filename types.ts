@@ -36,3 +36,43 @@ export interface Dimension {
   description: string;
   icon: ReactNode;
 }
+
+export interface OrderItem {
+  id: string;
+  title: string;
+  subtitle?: string;
+  price: number;
+  quantity: number;
+  image: string;
+  type: 'physical' | 'digital' | 'service';
+  downloadUrl?: string;
+}
+
+export interface OrderDetails {
+  orderId: string;
+  date: string;
+  customerName: string;
+  email: string;
+  phone: string;
+  shippingAddress: {
+    street: string;
+    city: string;
+    state: string;
+    postalCode: string;
+    country: string;
+  };
+  paymentMethod: {
+    type: string;
+    last4?: string;
+  };
+  items: OrderItem[];
+  subtotal: number;
+  shipping: number;
+  discount: number;
+  tax: number;
+  total: number;
+  status: 'confirmed' | 'processing' | 'shipped' | 'delivered';
+  trackingNumber?: string;
+  estimatedDelivery?: string;
+}
+
